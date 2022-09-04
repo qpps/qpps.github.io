@@ -1,0 +1,1781 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="./favicon.png" />
+		<meta name="viewport" content="width=device-width" />
+		<meta http-equiv="content-security-policy" content="">
+	<link href="./_app/immutable/assets/_layout-ae85bb57.css" rel="stylesheet">
+	<link href="./_app/immutable/assets/HeaderSearch-da4e9565.css" rel="stylesheet">
+	<link href="./_app/immutable/assets/_page-460865ff.css" rel="stylesheet">
+	<link rel="modulepreload" href="./_app/immutable/start-22733560.js">
+	<link rel="modulepreload" href="./_app/immutable/chunks/preload-helper-aa6bc0ce.js">
+	<link rel="modulepreload" href="./_app/immutable/chunks/singletons-e373c96b.js">
+	<link rel="modulepreload" href="./_app/immutable/components/pages/_layout.svelte-e7a42087.js">
+	<link rel="modulepreload" href="./_app/immutable/chunks/HeaderSearch.svelte_svelte_type_style_lang-a5644b06.js">
+	<link rel="modulepreload" href="./_app/immutable/chunks/stores-1c6623f1.js">
+	<link rel="modulepreload" href="./_app/immutable/chunks/Checkbox-1865ceb9.js">
+	<link rel="modulepreload" href="./_app/immutable/modules/pages/_layout.ts-fef7243a.js">
+	<link rel="modulepreload" href="./_app/immutable/chunks/_layout-8d7c16a4.js">
+	<link rel="modulepreload" href="./_app/immutable/components/pages/lpars/_page.svelte-7964e42f.js">
+	<link rel="modulepreload" href="./_app/immutable/chunks/store-a88a6609.js">
+	</head>
+	<body>
+		<div>
+
+
+
+
+<header aria-label="QPPS " class="bx--header">
+  
+  <a class="bx--header__name"><span class="bx--header__name--prefix">QPPS </span>
+    Quantum powered POWER sizer</a>
+  <div class="bx--header__global"><button type="button" aria-label="github" class="bx--header__action ">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="currentColor" preserveAspectRatio="xMidYMid meet" width="20" height="20" aria-hidden><path fill-rule="evenodd" d="M16,2a14,14,0,0,0-4.43,27.28c.7.13,1-.3,1-.67s0-1.21,0-2.38c-3.89.84-4.71-1.88-4.71-1.88A3.71,3.71,0,0,0,6.24,22.3c-1.27-.86.1-.85.1-.85A2.94,2.94,0,0,1,8.48,22.9a3,3,0,0,0,4.08,1.16,2.93,2.93,0,0,1,.88-1.87c-3.1-.36-6.37-1.56-6.37-6.92a5.4,5.4,0,0,1,1.44-3.76,5,5,0,0,1,.14-3.7s1.17-.38,3.85,1.43a13.3,13.3,0,0,1,7,0c2.67-1.81,3.84-1.43,3.84-1.43a5,5,0,0,1,.14,3.7,5.4,5.4,0,0,1,1.44,3.76c0,5.38-3.27,6.56-6.39,6.91a3.33,3.33,0,0,1,.95,2.59c0,1.87,0,3.38,0,3.84s.25.81,1,.67A14,14,0,0,0,16,2Z"></path></svg>
+  </button></div></header>
+
+<main id="main-content" style=" undefined" class="bx--content">
+<div role="tablist" class="bx--content-switcher  ">
+<button type="button" role="tab" tabindex="-1" aria-selected="false" id="ccs-0.25tpfx3hbk4" class="bx--content-switcher-btn "><span class="bx--content-switcher__label">Processors</span></button>
+        
+<button type="button" role="tab" tabindex="-1" aria-selected="false" id="ccs-0.fkcgm8ols5" class="bx--content-switcher-btn "><span class="bx--content-switcher__label">LPARs</span></button></div>
+    <p></p>
+    <div class="lparList svelte-1wfv2kx"><div class="bx--data-table-container  ">
+  <div class="bx--data-table-header"><h4 class="bx--data-table-header__title">LPARs</h4>
+      </div>
+  <section aria-label="data table toolbar" style="z-index: 1; undefined" class="bx--table-toolbar  bx--table-toolbar--normal"><div class="bx--toolbar-content">
+<button type="button" tabindex="0" class="bx--btn bx--btn--primary">
+    Add LPAR</button></div></section>
+  <table style="false" class="bx--data-table     bx--data-table--sort bx--data-table--zebra  ">
+<thead>
+<tr>
+        
+        
+        
+<th aria-sort="none" scope="col" data-header="name"><button class="bx--table-sort"><div class="bx--table-header-label">Name
+            </div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="currentColor" preserveAspectRatio="xMidYMid meet" width="20" height="20" aria-hidden aria-label="" class="bx--table-sort__icon"><path d="M16 4L6 14 7.41 15.41 15 7.83 15 28 17 28 17 7.83 24.59 15.41 26 14 16 4z"></path></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="currentColor" preserveAspectRatio="xMidYMid meet" width="20" height="20" aria-hidden aria-label="" class="bx--table-sort__icon-unsorted"><path d="M27.6 20.6L24 24.2 24 4 22 4 22 24.2 18.4 20.6 17 22 23 28 29 22zM9 4L3 10 4.4 11.4 8 7.8 8 28 10 28 10 7.8 13.6 11.4 15 10z"></path></svg></button></th>
+<th aria-sort="none" scope="col" data-header="os"><button class="bx--table-sort"><div class="bx--table-header-label">OS
+            </div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="currentColor" preserveAspectRatio="xMidYMid meet" width="20" height="20" aria-hidden aria-label="" class="bx--table-sort__icon"><path d="M16 4L6 14 7.41 15.41 15 7.83 15 28 17 28 17 7.83 24.59 15.41 26 14 16 4z"></path></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="currentColor" preserveAspectRatio="xMidYMid meet" width="20" height="20" aria-hidden aria-label="" class="bx--table-sort__icon-unsorted"><path d="M27.6 20.6L24 24.2 24 4 22 4 22 24.2 18.4 20.6 17 22 23 28 29 22zM9 4L3 10 4.4 11.4 8 7.8 8 28 10 28 10 7.8 13.6 11.4 15 10z"></path></svg></button></th>
+<th scope="col" data-header="performance"><div class="bx--table-header-label">Processor
+            </div></th>
+<th scope="col" data-header="actions"><div class="bx--table-header-label">
+            </div></th></tr></thead>
+    <tbody aria-live="polite"></tbody></table></div>
+
+<div role="presentation" class="bx--modal  "><div role="dialog" aria-modal="true" class="bx--modal-container"><div class="bx--modal-header">
+  <h3 class="bx--modal-header__heading bx--type-beta">Add LPAR</h3>
+  
+  <button type="button" aria-label="Close" class="bx--modal-close"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="currentColor" preserveAspectRatio="xMidYMid meet" width="20" height="20" aria-hidden="true" class="bx--modal-close__icon "><path d="M24 9.4L22.6 8 16 14.6 9.4 8 8 9.4 14.6 16 8 22.6 9.4 24 16 17.4 22.6 24 24 22.6 17.4 16 24 9.4z"></path></svg></button></div>
+    <div class="bx--modal-content  ">
+<div class="bx--form-item bx--text-input-wrapper">
+  <label for="ccs-0.p0yohepaon" class="bx--label">
+        LPAR name
+      </label>
+  <div class="bx--text-input__field-outer-wrapper"><div class="bx--text-input__field-wrapper">
+      
+      
+      <input id="ccs-0.p0yohepaon" placeholder="" class="bx--text-input     " value="">
+      
+      
+      </div>
+    
+    
+    </div></div>
+        
+<div class="bx--form-item"><fieldset  class="bx--radio-button-group   bx--radio-button-group--label-right"><legend class="bx--label">Operating system</legend>
+    <div class="bx--radio-button-wrapper "><input type="radio" id="ccs-0.qysqham0hph" name="" checked   value="ibmi" class="bx--radio-button">
+  <label for="ccs-0.qysqham0hph" class="bx--radio-button__label"><span class="bx--radio-button__appearance"></span>
+    <span>
+          IBM i
+        </span></label></div>
+            <div class="bx--radio-button-wrapper "><input type="radio" id="ccs-0.mpu4e4ls4of" name=""    value="aix" class="bx--radio-button">
+  <label for="ccs-0.mpu4e4ls4of" class="bx--radio-button__label"><span class="bx--radio-button__appearance"></span>
+    <span>
+          AIX
+        </span></label></div>
+            <div class="bx--radio-button-wrapper "><input type="radio" id="ccs-0.s2ncgp6horb" name=""    value="linux" class="bx--radio-button">
+  <label for="ccs-0.s2ncgp6horb" class="bx--radio-button__label"><span class="bx--radio-button__appearance"></span>
+    <span>
+          Linux
+        </span></label></div></fieldset></div>
+        
+<div class="bx--form-item"><div class="bx--number bx--number--helpertext"><label for="ccs-0.fp73rt4r82" class="bx--label">CPW</label>
+    <div class="bx--number__input-wrapper"><input type="number" pattern="[0-9]*" aria-describedby="error-ccs-0.fp73rt4r82" id="ccs-0.fp73rt4r82" step="1" value="0">
+      
+      
+      
+      <div class="bx--number__controls"><button type="button" tabindex="-1" title="Decrement number" aria-label="Decrement number"  class="bx--number__control-btn down-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="currentColor" preserveAspectRatio="xMidYMid meet" width="16" height="16" aria-hidden class="down-icon"><path d="M8 15H24V17H8z"></path></svg></button>
+          <div class="bx--number__rule-divider"></div>
+          <button type="button" tabindex="-1" title="Increment number" aria-label="Increment number"  class="bx--number__control-btn up-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="currentColor" preserveAspectRatio="xMidYMid meet" width="16" height="16" aria-hidden class="up-icon"><path d="M17 15L17 8 15 8 15 15 8 15 8 17 15 17 15 24 17 24 17 17 24 17 24 15z"></path></svg></button>
+          <div class="bx--number__rule-divider"></div></div></div>
+    
+    
+    </div></div></div>
+
+    <div class="bx--modal-footer ">
+<button type="button" tabindex="0" class="bx--btn bx--btn--secondary">
+    Cancel</button>
+  
+<button type="button" tabindex="0" class="bx--btn bx--btn--primary">
+    Add</button>
+  </div></div></div></div>
+
+<div class="viosSelection svelte-1wfv2kx">
+<form class="bx--form">
+<fieldset aria-labelledby="" class="bx--fieldset "><legend class="bx--label">VIOS topology</legend>
+  
+<div class="bx--form-item"><fieldset  class="bx--radio-button-group   bx--radio-button-group--label-right">
+    <div class="bx--radio-button-wrapper "><input type="radio" id="ccs-0.t20hv972ega" name=""    value="0" class="bx--radio-button">
+  <label for="ccs-0.t20hv972ega" class="bx--radio-button__label"><span class="bx--radio-button__appearance"></span>
+    <span>
+          No VIOS
+        </span></label></div>
+            <div class="bx--radio-button-wrapper "><input type="radio" id="ccs-0.bdpx36di07a" name=""    value="1" class="bx--radio-button">
+  <label for="ccs-0.bdpx36di07a" class="bx--radio-button__label"><span class="bx--radio-button__appearance"></span>
+    <span>
+          Single VIOS (not recommended)
+        </span></label></div>
+            <div class="bx--radio-button-wrapper "><input type="radio" id="ccs-0.e12397oeavl" name="" checked   value="2" class="bx--radio-button">
+  <label for="ccs-0.e12397oeavl" class="bx--radio-button__label"><span class="bx--radio-button__appearance"></span>
+    <span>
+          Dual VIOS (recommended)
+        </span></label></div>
+            <div class="bx--radio-button-wrapper "><input type="radio" id="ccs-0.istph6kvoj" name=""    value="4" class="bx--radio-button">
+  <label for="ccs-0.istph6kvoj" class="bx--radio-button__label"><span class="bx--radio-button__appearance"></span>
+    <span>
+          4 VIOSes
+        </span></label></div></fieldset></div>
+  </fieldset>
+    
+<fieldset aria-labelledby="" class="bx--fieldset "><legend class="bx--label">VIOS size</legend>
+  
+<div class="bx--form-item"><fieldset  class="bx--radio-button-group   bx--radio-button-group--label-right">
+    <div class="bx--radio-button-wrapper "><input type="radio" id="ccs-0.gnlwrzl6xg" name="" checked   value="auto" class="bx--radio-button">
+  <label for="ccs-0.gnlwrzl6xg" class="bx--radio-button__label"><span class="bx--radio-button__appearance"></span>
+    <span>
+          Automatic
+        </span></label></div>
+            <div class="bx--radio-button-wrapper "><input type="radio" id="ccs-0.7jpnboy3t8w" name=""    value="manual" class="bx--radio-button">
+  <label for="ccs-0.7jpnboy3t8w" class="bx--radio-button__label"><span class="bx--radio-button__appearance"></span>
+    <span>
+          Manual
+        </span></label></div></fieldset></div>
+        
+<div class="bx--form-item"><div class="bx--number bx--number--helpertext"><label for="ccs-0.xuzhrl23z1h" class="bx--label bx--label--disabled">Entitlement (per VIOS)</label>
+    <div class="bx--number__input-wrapper"><input type="number" pattern="[0-9]*" aria-describedby="error-ccs-0.xuzhrl23z1h" disabled id="ccs-0.xuzhrl23z1h" step="1" value="1">
+      
+      
+      
+      <div class="bx--number__controls"><button type="button" tabindex="-1" title="Decrement number" aria-label="Decrement number" disabled class="bx--number__control-btn down-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="currentColor" preserveAspectRatio="xMidYMid meet" width="16" height="16" aria-hidden class="down-icon"><path d="M8 15H24V17H8z"></path></svg></button>
+          <div class="bx--number__rule-divider"></div>
+          <button type="button" tabindex="-1" title="Increment number" aria-label="Increment number" disabled class="bx--number__control-btn up-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="currentColor" preserveAspectRatio="xMidYMid meet" width="16" height="16" aria-hidden class="up-icon"><path d="M17 15L17 8 15 8 15 15 8 15 8 17 15 17 15 24 17 24 17 17 24 17 24 15z"></path></svg></button>
+          <div class="bx--number__rule-divider"></div></div></div>
+    
+    
+    </div></div>
+  </fieldset></form></div>
+
+<div class="bx--data-table-container  ">
+  <div class="bx--data-table-header"><h4 class="bx--data-table-header__title">Proposed processors</h4>
+      </div>
+  
+  <table style="false" class="bx--data-table     bx--data-table--sort bx--data-table--zebra  ">
+<thead>
+<tr>
+        
+        
+        
+<th aria-sort="none" scope="col" data-header="modelName"><button class="bx--table-sort"><div class="bx--table-header-label">Model
+            </div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="currentColor" preserveAspectRatio="xMidYMid meet" width="20" height="20" aria-hidden aria-label="" class="bx--table-sort__icon"><path d="M16 4L6 14 7.41 15.41 15 7.83 15 28 17 28 17 7.83 24.59 15.41 26 14 16 4z"></path></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="currentColor" preserveAspectRatio="xMidYMid meet" width="20" height="20" aria-hidden aria-label="" class="bx--table-sort__icon-unsorted"><path d="M27.6 20.6L24 24.2 24 4 22 4 22 24.2 18.4 20.6 17 22 23 28 29 22zM9 4L3 10 4.4 11.4 8 7.8 8 28 10 28 10 7.8 13.6 11.4 15 10z"></path></svg></button></th>
+<th aria-sort="none" scope="col" data-header="id"><button class="bx--table-sort"><div class="bx--table-header-label">Name
+            </div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="currentColor" preserveAspectRatio="xMidYMid meet" width="20" height="20" aria-hidden aria-label="" class="bx--table-sort__icon"><path d="M16 4L6 14 7.41 15.41 15 7.83 15 28 17 28 17 7.83 24.59 15.41 26 14 16 4z"></path></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="currentColor" preserveAspectRatio="xMidYMid meet" width="20" height="20" aria-hidden aria-label="" class="bx--table-sort__icon-unsorted"><path d="M27.6 20.6L24 24.2 24 4 22 4 22 24.2 18.4 20.6 17 22 23 28 29 22zM9 4L3 10 4.4 11.4 8 7.8 8 28 10 28 10 7.8 13.6 11.4 15 10z"></path></svg></button></th>
+<th aria-sort="none" scope="col" data-header="baseFrequency"><button class="bx--table-sort"><div class="bx--table-header-label">Frequency (GHz)
+            </div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="currentColor" preserveAspectRatio="xMidYMid meet" width="20" height="20" aria-hidden aria-label="" class="bx--table-sort__icon"><path d="M16 4L6 14 7.41 15.41 15 7.83 15 28 17 28 17 7.83 24.59 15.41 26 14 16 4z"></path></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="currentColor" preserveAspectRatio="xMidYMid meet" width="20" height="20" aria-hidden aria-label="" class="bx--table-sort__icon-unsorted"><path d="M27.6 20.6L24 24.2 24 4 22 4 22 24.2 18.4 20.6 17 22 23 28 29 22zM9 4L3 10 4.4 11.4 8 7.8 8 28 10 28 10 7.8 13.6 11.4 15 10z"></path></svg></button></th>
+<th aria-sort="none" scope="col" data-header="maxSockets"><button class="bx--table-sort"><div class="bx--table-header-label">Sockets
+            </div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="currentColor" preserveAspectRatio="xMidYMid meet" width="20" height="20" aria-hidden aria-label="" class="bx--table-sort__icon"><path d="M16 4L6 14 7.41 15.41 15 7.83 15 28 17 28 17 7.83 24.59 15.41 26 14 16 4z"></path></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="currentColor" preserveAspectRatio="xMidYMid meet" width="20" height="20" aria-hidden aria-label="" class="bx--table-sort__icon-unsorted"><path d="M27.6 20.6L24 24.2 24 4 22 4 22 24.2 18.4 20.6 17 22 23 28 29 22zM9 4L3 10 4.4 11.4 8 7.8 8 28 10 28 10 7.8 13.6 11.4 15 10z"></path></svg></button></th>
+<th aria-sort="none" scope="col" data-header="coresPerSocket"><button class="bx--table-sort"><div class="bx--table-header-label">Cores per socket
+            </div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="currentColor" preserveAspectRatio="xMidYMid meet" width="20" height="20" aria-hidden aria-label="" class="bx--table-sort__icon"><path d="M16 4L6 14 7.41 15.41 15 7.83 15 28 17 28 17 7.83 24.59 15.41 26 14 16 4z"></path></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="currentColor" preserveAspectRatio="xMidYMid meet" width="20" height="20" aria-hidden aria-label="" class="bx--table-sort__icon-unsorted"><path d="M27.6 20.6L24 24.2 24 4 22 4 22 24.2 18.4 20.6 17 22 23 28 29 22zM9 4L3 10 4.4 11.4 8 7.8 8 28 10 28 10 7.8 13.6 11.4 15 10z"></path></svg></button></th>
+<th aria-sort="none" scope="col" data-header="ibmiCores"><button class="bx--table-sort"><div class="bx--table-header-label">IBM i cores
+            </div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="currentColor" preserveAspectRatio="xMidYMid meet" width="20" height="20" aria-hidden aria-label="" class="bx--table-sort__icon"><path d="M16 4L6 14 7.41 15.41 15 7.83 15 28 17 28 17 7.83 24.59 15.41 26 14 16 4z"></path></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="currentColor" preserveAspectRatio="xMidYMid meet" width="20" height="20" aria-hidden aria-label="" class="bx--table-sort__icon-unsorted"><path d="M27.6 20.6L24 24.2 24 4 22 4 22 24.2 18.4 20.6 17 22 23 28 29 22zM9 4L3 10 4.4 11.4 8 7.8 8 28 10 28 10 7.8 13.6 11.4 15 10z"></path></svg></button></th>
+<th aria-sort="none" scope="col" data-header="aixCores"><button class="bx--table-sort"><div class="bx--table-header-label">AIX cores
+            </div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="currentColor" preserveAspectRatio="xMidYMid meet" width="20" height="20" aria-hidden aria-label="" class="bx--table-sort__icon"><path d="M16 4L6 14 7.41 15.41 15 7.83 15 28 17 28 17 7.83 24.59 15.41 26 14 16 4z"></path></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="currentColor" preserveAspectRatio="xMidYMid meet" width="20" height="20" aria-hidden aria-label="" class="bx--table-sort__icon-unsorted"><path d="M27.6 20.6L24 24.2 24 4 22 4 22 24.2 18.4 20.6 17 22 23 28 29 22zM9 4L3 10 4.4 11.4 8 7.8 8 28 10 28 10 7.8 13.6 11.4 15 10z"></path></svg></button></th>
+<th aria-sort="none" scope="col" data-header="linuxCores"><button class="bx--table-sort"><div class="bx--table-header-label">Linux cores
+            </div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="currentColor" preserveAspectRatio="xMidYMid meet" width="20" height="20" aria-hidden aria-label="" class="bx--table-sort__icon"><path d="M16 4L6 14 7.41 15.41 15 7.83 15 28 17 28 17 7.83 24.59 15.41 26 14 16 4z"></path></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="currentColor" preserveAspectRatio="xMidYMid meet" width="20" height="20" aria-hidden aria-label="" class="bx--table-sort__icon-unsorted"><path d="M27.6 20.6L24 24.2 24 4 22 4 22 24.2 18.4 20.6 17 22 23 28 29 22zM9 4L3 10 4.4 11.4 8 7.8 8 28 10 28 10 7.8 13.6 11.4 15 10z"></path></svg></button></th>
+<th aria-sort="none" scope="col" data-header="viosCores"><button class="bx--table-sort"><div class="bx--table-header-label">VIOS cores
+            </div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="currentColor" preserveAspectRatio="xMidYMid meet" width="20" height="20" aria-hidden aria-label="" class="bx--table-sort__icon"><path d="M16 4L6 14 7.41 15.41 15 7.83 15 28 17 28 17 7.83 24.59 15.41 26 14 16 4z"></path></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="currentColor" preserveAspectRatio="xMidYMid meet" width="20" height="20" aria-hidden aria-label="" class="bx--table-sort__icon-unsorted"><path d="M27.6 20.6L24 24.2 24 4 22 4 22 24.2 18.4 20.6 17 22 23 28 29 22zM9 4L3 10 4.4 11.4 8 7.8 8 28 10 28 10 7.8 13.6 11.4 15 10z"></path></svg></button></th></tr></thead>
+    <tbody aria-live="polite">
+<tr data-row="EPG0" class="   ">
+          
+          
+<td>S1014 (9105-41B)
+              </td>
+<td>EPG0
+              </td>
+<td>3
+             - 3.9
+              </td>
+<td>1
+            
+              </td>
+<td>4
+              </td>
+<td>0.00
+            
+              </td>
+<td>0.00
+            
+              </td>
+<td>0.00
+              </td>
+<td>1.00
+              </td>
+        </tr>
+
+        
+<tr data-row="EPG1" class="   ">
+          
+          
+<td>S1014 (9105-41B)
+              </td>
+<td>EPG1
+              </td>
+<td>3
+             - 3.9
+              </td>
+<td>1
+            
+              </td>
+<td>8
+              </td>
+<td>0.00
+            
+              </td>
+<td>0.00
+            
+              </td>
+<td>0.00
+              </td>
+<td>1.00
+              </td>
+        </tr>
+
+        
+<tr data-row="EPGR" class="   ">
+          
+          
+<td>S1022s (9105-22B)
+              </td>
+<td>EPGR
+              </td>
+<td>3
+             - 3.9
+              </td>
+<td>1
+            
+              </td>
+<td>4
+              </td>
+<td>0.00
+            
+              </td>
+<td>0.00
+            
+              </td>
+<td>0.00
+              </td>
+<td>1.00
+              </td>
+        </tr>
+
+        
+<tr data-row="EPGQ" class="   ">
+          
+          
+<td>S1022s (9105-22B)
+              </td>
+<td>EPGQ
+              </td>
+<td>3
+             - 3.9
+              </td>
+<td>1
+            - 2
+              </td>
+<td>8
+              </td>
+<td>0.00
+            
+              </td>
+<td>0.00
+            
+              </td>
+<td>0.00
+              </td>
+<td>1.00
+              </td>
+        </tr>
+
+        
+<tr data-row="EPG9" class="   ">
+          
+          
+<td>S1022 (9105-22A)
+              </td>
+<td>EPG9
+              </td>
+<td>2.9
+             - 4
+              </td>
+<td>1
+            - 2
+              </td>
+<td>12
+              </td>
+<td>0.00
+            
+              </td>
+<td>0.00
+            
+              </td>
+<td>0.00
+              </td>
+<td>1.00
+              </td>
+        </tr>
+
+        
+<tr data-row="EPG8" class="   ">
+          
+          
+<td>S1022 (9105-22A)
+              </td>
+<td>EPG8
+              </td>
+<td>2.75
+             - 4
+              </td>
+<td>2
+            
+              </td>
+<td>16
+              </td>
+<td>0.00
+            
+              </td>
+<td>0.00
+            
+              </td>
+<td>0.00
+              </td>
+<td>1.00
+              </td>
+        </tr>
+
+        
+<tr data-row="EPGA" class="   ">
+          
+          
+<td>S1022 (9105-22A)
+              </td>
+<td>EPGA
+              </td>
+<td>2.45
+             - 2.9
+              </td>
+<td>2
+            
+              </td>
+<td>20
+              </td>
+<td>0.00
+            
+              </td>
+<td>0.00
+            
+              </td>
+<td>0.00
+              </td>
+<td>1.00
+              </td>
+        </tr>
+
+        
+<tr data-row="EPGG" class="   ">
+          
+          
+<td>L1022 (9786-22H)
+              </td>
+<td>EPGG
+              </td>
+<td>2.9
+             - 4
+              </td>
+<td>1
+            - 2
+              </td>
+<td>12
+              </td>
+<td>0.00
+            
+              </td>
+<td>0.00
+            
+              </td>
+<td>0.00
+              </td>
+<td>1.00
+              </td>
+        </tr>
+
+        
+<tr data-row="EPGF" class="   ">
+          
+          
+<td>L1022 (9786-22H)
+              </td>
+<td>EPGF
+              </td>
+<td>2.75
+             - 4
+              </td>
+<td>2
+            
+              </td>
+<td>16
+              </td>
+<td>0.00
+            
+              </td>
+<td>0.00
+            
+              </td>
+<td>0.00
+              </td>
+<td>1.00
+              </td>
+        </tr>
+
+        
+<tr data-row="EPGH" class="   ">
+          
+          
+<td>L1022 (9786-22H)
+              </td>
+<td>EPGH
+              </td>
+<td>2.45
+             - 3.9
+              </td>
+<td>2
+            
+              </td>
+<td>20
+              </td>
+<td>0.00
+            
+              </td>
+<td>0.00
+            
+              </td>
+<td>0.00
+              </td>
+<td>1.00
+              </td>
+        </tr>
+
+        
+<tr data-row="EPGM" class="   ">
+          
+          
+<td>S1024 (9105-42A)
+              </td>
+<td>EPGM
+              </td>
+<td>3.4
+             - 4
+              </td>
+<td>1
+            - 2
+              </td>
+<td>12
+              </td>
+<td>0.00
+            
+              </td>
+<td>0.00
+            
+              </td>
+<td>0.00
+              </td>
+<td>1.00
+              </td>
+        </tr>
+
+        
+<tr data-row="EPGC" class="   ">
+          
+          
+<td>S1024 (9105-42A)
+              </td>
+<td>EPGC
+              </td>
+<td>3.1
+             - 4
+              </td>
+<td>2
+            
+              </td>
+<td>16
+              </td>
+<td>0.00
+            
+              </td>
+<td>0.00
+            
+              </td>
+<td>0.00
+              </td>
+<td>1.00
+              </td>
+        </tr>
+
+        
+<tr data-row="EPGE" class="   ">
+          
+          
+<td>S1024 (9105-42A)
+              </td>
+<td>EPGE
+              </td>
+<td>2.75
+             - 3.9
+              </td>
+<td>2
+            
+              </td>
+<td>24
+              </td>
+<td>0.00
+            
+              </td>
+<td>0.00
+            
+              </td>
+<td>0.00
+              </td>
+<td>1.00
+              </td>
+        </tr>
+
+        
+<tr data-row="EPGN" class="   ">
+          
+          
+<td>L1024 (9786-42H)
+              </td>
+<td>EPGN
+              </td>
+<td>3.4
+             - 4
+              </td>
+<td>1
+            - 2
+              </td>
+<td>12
+              </td>
+<td>0.00
+            
+              </td>
+<td>0.00
+            
+              </td>
+<td>0.00
+              </td>
+<td>1.00
+              </td>
+        </tr>
+
+        
+<tr data-row="EPGJ" class="   ">
+          
+          
+<td>L1024 (9786-42H)
+              </td>
+<td>EPGJ
+              </td>
+<td>3.1
+             - 4
+              </td>
+<td>2
+            
+              </td>
+<td>16
+              </td>
+<td>0.00
+            
+              </td>
+<td>0.00
+            
+              </td>
+<td>0.00
+              </td>
+<td>1.00
+              </td>
+        </tr>
+
+        
+<tr data-row="EPGL" class="   ">
+          
+          
+<td>L1024 (9786-42H)
+              </td>
+<td>EPGL
+              </td>
+<td>2.75
+             - 3.9
+              </td>
+<td>2
+            
+              </td>
+<td>24
+              </td>
+<td>0.00
+            
+              </td>
+<td>0.00
+            
+              </td>
+<td>0.00
+              </td>
+<td>1.00
+              </td>
+        </tr>
+
+        
+<tr data-row="EHC8" class="   ">
+          
+          
+<td>E1050 (9043-MRX)
+              </td>
+<td>EHC8
+              </td>
+<td>2.95
+             - 3.9
+              </td>
+<td>2
+            - 4
+              </td>
+<td>24
+              </td>
+<td>0.00
+            
+              </td>
+<td>0.00
+            
+              </td>
+<td>0.00
+              </td>
+<td>1.00
+              </td>
+        </tr>
+
+        
+<tr data-row="EPEU" class="   ">
+          
+          
+<td>E1050 (9043-MRX)
+              </td>
+<td>EPEU
+              </td>
+<td>3.35
+             - 4
+              </td>
+<td>2
+            - 4
+              </td>
+<td>12
+              </td>
+<td>0.00
+            
+              </td>
+<td>0.00
+            
+              </td>
+<td>0.00
+              </td>
+<td>1.00
+              </td>
+        </tr>
+
+        
+<tr data-row="EPEV" class="   ">
+          
+          
+<td>E1050 (9043-MRX)
+              </td>
+<td>EPEV
+              </td>
+<td>3.2
+             - 4
+              </td>
+<td>2
+            - 4
+              </td>
+<td>18
+              </td>
+<td>0.00
+            
+              </td>
+<td>0.00
+            
+              </td>
+<td>0.00
+              </td>
+<td>1.00
+              </td>
+        </tr>
+
+        
+<tr data-row="EPGW" class="   ">
+          
+          
+<td>E1050 (9043-MRX)
+              </td>
+<td>EPGW
+              </td>
+<td>2.95
+             - 3.9
+              </td>
+<td>2
+            - 4
+              </td>
+<td>24
+              </td>
+<td>0.00
+            
+              </td>
+<td>0.00
+            
+              </td>
+<td>0.00
+              </td>
+<td>1.00
+              </td>
+        </tr>
+
+        
+<tr data-row="EDP2" class="   ">
+          
+          
+<td>E1080 (9080-HEX)
+              </td>
+<td>EDP2
+              </td>
+<td>3.65
+             - 3.9
+              </td>
+<td>4
+            - 16
+              </td>
+<td>10
+              </td>
+<td>0.00
+            
+              </td>
+<td>0.00
+            
+              </td>
+<td>0.00
+              </td>
+<td>1.00
+              </td>
+        </tr>
+
+        
+<tr data-row="EDP3" class="   ">
+          
+          
+<td>E1080 (9080-HEX)
+              </td>
+<td>EDP3
+              </td>
+<td>3.6
+             - 4.15
+              </td>
+<td>4
+            - 16
+              </td>
+<td>12
+              </td>
+<td>0.00
+            
+              </td>
+<td>0.00
+            
+              </td>
+<td>0.00
+              </td>
+<td>1.00
+              </td>
+        </tr>
+
+        
+<tr data-row="EDP4" class="   ">
+          
+          
+<td>E1080 (9080-HEX)
+              </td>
+<td>EDP4
+              </td>
+<td>3.55
+             - 4
+              </td>
+<td>4
+            - 16
+              </td>
+<td>15
+              </td>
+<td>0.00
+            
+              </td>
+<td>0.00
+            
+              </td>
+<td>0.00
+              </td>
+<td>1.00
+              </td>
+        </tr>
+
+        
+<tr data-row="EP50" class="   ">
+          
+          
+<td>S914 (9009-41G)
+              </td>
+<td>EP50
+              </td>
+<td>2.3
+             - 3.8
+              </td>
+<td>1
+            
+              </td>
+<td>4
+              </td>
+<td>0.00
+            
+              </td>
+<td>0.00
+            
+              </td>
+<td>0.00
+              </td>
+<td>1.00
+              </td>
+        </tr>
+
+        
+<tr data-row="EP51" class="   ">
+          
+          
+<td>S914 (9009-41G)
+              </td>
+<td>EP51
+              </td>
+<td>2.3
+             - 3.8
+              </td>
+<td>1
+            
+              </td>
+<td>6
+              </td>
+<td>0.00
+            
+              </td>
+<td>0.00
+            
+              </td>
+<td>0.00
+              </td>
+<td>1.00
+              </td>
+        </tr>
+
+        
+<tr data-row="EP52" class="   ">
+          
+          
+<td>S914 (9009-41G)
+              </td>
+<td>EP52
+              </td>
+<td>2.8
+             - 3.8
+              </td>
+<td>1
+            
+              </td>
+<td>8
+              </td>
+<td>0.00
+            
+              </td>
+<td>0.00
+            
+              </td>
+<td>0.00
+              </td>
+<td>1.00
+              </td>
+        </tr>
+
+        
+<tr data-row="EP5Y" class="   ">
+          
+          
+<td>S922 (9009-22G)
+              </td>
+<td>EP5Y
+              </td>
+<td>2.8
+             - 3.8
+              </td>
+<td>1
+            
+              </td>
+<td>1
+              </td>
+<td>0.00
+            
+              </td>
+<td>0.00
+            
+              </td>
+<td>0.00
+              </td>
+<td>1.00
+              </td>
+        </tr>
+
+        
+<tr data-row="EP58" class="   ">
+          
+          
+<td>S922 (9009-22G)
+              </td>
+<td>EP58
+              </td>
+<td>3.4
+             - 3.9
+              </td>
+<td>1
+            - 2
+              </td>
+<td>8
+              </td>
+<td>0.00
+            
+              </td>
+<td>0.00
+            
+              </td>
+<td>0.00
+              </td>
+<td>1.00
+              </td>
+        </tr>
+
+        
+<tr data-row="EP59" class="   ">
+          
+          
+<td>S922 (9009-22G)
+              </td>
+<td>EP59
+              </td>
+<td>2.9
+             - 3.8
+              </td>
+<td>1
+            - 2
+              </td>
+<td>10
+              </td>
+<td>0.00
+            
+              </td>
+<td>0.00
+            
+              </td>
+<td>0.00
+              </td>
+<td>1.00
+              </td>
+        </tr>
+
+        
+<tr data-row="EP5B" class="   ">
+          
+          
+<td>S922 (9009-22G)
+              </td>
+<td>EP5B
+              </td>
+<td>2.8
+             - 3.8
+              </td>
+<td>1
+            - 2
+              </td>
+<td>11
+              </td>
+<td>0.00
+            
+              </td>
+<td>0.00
+            
+              </td>
+<td>0.00
+              </td>
+<td>1.00
+              </td>
+        </tr>
+
+        
+<tr data-row="EP5W" class="   ">
+          
+          
+<td>S922 (9009-22G)
+              </td>
+<td>EP5W
+              </td>
+<td>2.8
+             - 3.8
+              </td>
+<td>1
+            - 2
+              </td>
+<td>12
+              </td>
+<td>0.00
+            
+              </td>
+<td>0.00
+            
+              </td>
+<td>0.00
+              </td>
+<td>1.00
+              </td>
+        </tr>
+
+        
+<tr data-row="EP5E" class="   ">
+          
+          
+<td>S924 (9009-42G)
+              </td>
+<td>EP5E
+              </td>
+<td>3.8
+             - 4
+              </td>
+<td>1
+            - 2
+              </td>
+<td>8
+              </td>
+<td>0.00
+            
+              </td>
+<td>0.00
+            
+              </td>
+<td>0.00
+              </td>
+<td>1.00
+              </td>
+        </tr>
+
+        
+<tr data-row="EP5F" class="   ">
+          
+          
+<td>S924 (9009-42G)
+              </td>
+<td>EP5F
+              </td>
+<td>3.5
+             - 3.9
+              </td>
+<td>1
+            - 2
+              </td>
+<td>10
+              </td>
+<td>0.00
+            
+              </td>
+<td>0.00
+            
+              </td>
+<td>0.00
+              </td>
+<td>1.00
+              </td>
+        </tr>
+
+        
+<tr data-row="EP5H" class="   ">
+          
+          
+<td>S924 (9009-42G)
+              </td>
+<td>EP5H
+              </td>
+<td>3.45
+             - 3.9
+              </td>
+<td>1
+            - 2
+              </td>
+<td>11
+              </td>
+<td>0.00
+            
+              </td>
+<td>0.00
+            
+              </td>
+<td>0.00
+              </td>
+<td>1.00
+              </td>
+        </tr>
+
+        
+<tr data-row="EP5G" class="   ">
+          
+          
+<td>S924 (9009-42G)
+              </td>
+<td>EP5G
+              </td>
+<td>3.4
+             - 3.9
+              </td>
+<td>1
+            - 2
+              </td>
+<td>12
+              </td>
+<td>0.00
+            
+              </td>
+<td>0.00
+            
+              </td>
+<td>0.00
+              </td>
+<td>1.00
+              </td>
+        </tr>
+
+        
+<tr data-row="EP10" class="   ">
+          
+          
+<td>S914 (9009-41A)
+              </td>
+<td>EP10
+              </td>
+<td>2.3
+             - 3.8
+              </td>
+<td>1
+            
+              </td>
+<td>4
+              </td>
+<td>0.00
+            
+              </td>
+<td>0.00
+            
+              </td>
+<td>0.00
+              </td>
+<td>1.00
+              </td>
+        </tr>
+
+        
+<tr data-row="EP11" class="   ">
+          
+          
+<td>S914 (9009-41A)
+              </td>
+<td>EP11
+              </td>
+<td>2.3
+             - 3.8
+              </td>
+<td>1
+            
+              </td>
+<td>6
+              </td>
+<td>0.00
+            
+              </td>
+<td>0.00
+            
+              </td>
+<td>0.00
+              </td>
+<td>1.00
+              </td>
+        </tr>
+
+        
+<tr data-row="EP12" class="   ">
+          
+          
+<td>S914 (9009-41A)
+              </td>
+<td>EP12
+              </td>
+<td>2.8
+             - 3.8
+              </td>
+<td>1
+            
+              </td>
+<td>8
+              </td>
+<td>0.00
+            
+              </td>
+<td>0.00
+            
+              </td>
+<td>0.00
+              </td>
+<td>1.00
+              </td>
+        </tr>
+
+        
+<tr data-row="EP18" class="   ">
+          
+          
+<td>S922 (9009-22A)
+              </td>
+<td>EP18
+              </td>
+<td>3.4
+             - 3.9
+              </td>
+<td>1
+            - 2
+              </td>
+<td>8
+              </td>
+<td>0.00
+            
+              </td>
+<td>0.00
+            
+              </td>
+<td>0.00
+              </td>
+<td>1.00
+              </td>
+        </tr>
+
+        
+<tr data-row="EP19" class="   ">
+          
+          
+<td>S922 (9009-22A)
+              </td>
+<td>EP19
+              </td>
+<td>2.9
+             - 3.8
+              </td>
+<td>1
+            - 2
+              </td>
+<td>10
+              </td>
+<td>0.00
+            
+              </td>
+<td>0.00
+            
+              </td>
+<td>0.00
+              </td>
+<td>1.00
+              </td>
+        </tr>
+
+        
+<tr data-row="EP1E" class="   ">
+          
+          
+<td>S924 (9009-42A)
+              </td>
+<td>EP1E
+              </td>
+<td>3.8
+             - 4
+              </td>
+<td>1
+            - 2
+              </td>
+<td>8
+              </td>
+<td>0.00
+            
+              </td>
+<td>0.00
+            
+              </td>
+<td>0.00
+              </td>
+<td>1.00
+              </td>
+        </tr>
+
+        
+<tr data-row="EP1F" class="   ">
+          
+          
+<td>S924 (9009-42A)
+              </td>
+<td>EP1F
+              </td>
+<td>3.5
+             - 3.9
+              </td>
+<td>1
+            - 2
+              </td>
+<td>10
+              </td>
+<td>0.00
+            
+              </td>
+<td>0.00
+            
+              </td>
+<td>0.00
+              </td>
+<td>1.00
+              </td>
+        </tr>
+
+        
+<tr data-row="EP1H" class="   ">
+          
+          
+<td>S924 (9009-42A)
+              </td>
+<td>EP1H
+              </td>
+<td>3.45
+             - 3.9
+              </td>
+<td>1
+            - 2
+              </td>
+<td>11
+              </td>
+<td>0.00
+            
+              </td>
+<td>0.00
+            
+              </td>
+<td>0.00
+              </td>
+<td>1.00
+              </td>
+        </tr>
+
+        
+<tr data-row="EP1G" class="   ">
+          
+          
+<td>S924 (9009-42A)
+              </td>
+<td>EP1G
+              </td>
+<td>3.4
+             - 3.9
+              </td>
+<td>1
+            - 2
+              </td>
+<td>12
+              </td>
+<td>0.00
+            
+              </td>
+<td>0.00
+            
+              </td>
+<td>0.00
+              </td>
+<td>1.00
+              </td>
+        </tr>
+
+        
+<tr data-row="EPWR" class="   ">
+          
+          
+<td>E950 (9040-MR9)
+              </td>
+<td>EPWR
+              </td>
+<td>3.6
+             - 3.8
+              </td>
+<td>2
+            - 4
+              </td>
+<td>8
+              </td>
+<td>0.00
+            
+              </td>
+<td>0.00
+            
+              </td>
+<td>0.00
+              </td>
+<td>1.00
+              </td>
+        </tr>
+
+        
+<tr data-row="EPWS" class="   ">
+          
+          
+<td>E950 (9040-MR9)
+              </td>
+<td>EPWS
+              </td>
+<td>3.4
+             - 3.8
+              </td>
+<td>2
+            - 4
+              </td>
+<td>10
+              </td>
+<td>0.00
+            
+              </td>
+<td>0.00
+            
+              </td>
+<td>0.00
+              </td>
+<td>1.00
+              </td>
+        </tr>
+
+        
+<tr data-row="EPWY" class="   ">
+          
+          
+<td>E950 (9040-MR9)
+              </td>
+<td>EPWY
+              </td>
+<td>3.2
+             - 3.8
+              </td>
+<td>2
+            - 4
+              </td>
+<td>11
+              </td>
+<td>0.00
+            
+              </td>
+<td>0.00
+            
+              </td>
+<td>0.00
+              </td>
+<td>1.00
+              </td>
+        </tr>
+
+        
+<tr data-row="EPWT" class="   ">
+          
+          
+<td>E950 (9040-MR9)
+              </td>
+<td>EPWT
+              </td>
+<td>3.15
+             - 3.8
+              </td>
+<td>2
+            - 4
+              </td>
+<td>12
+              </td>
+<td>0.00
+            
+              </td>
+<td>0.00
+            
+              </td>
+<td>0.00
+              </td>
+<td>1.00
+              </td>
+        </tr>
+
+        
+<tr data-row="EFP0" class="   ">
+          
+          
+<td>E980 (9080-M9S)
+              </td>
+<td>EFP0
+              </td>
+<td>3.58
+             - 3.9
+              </td>
+<td>1
+            - 16
+              </td>
+<td>6
+              </td>
+<td>0.00
+            
+              </td>
+<td>0.00
+            
+              </td>
+<td>0.00
+              </td>
+<td>1.00
+              </td>
+        </tr>
+
+        
+<tr data-row="EFP1" class="   ">
+          
+          
+<td>E980 (9080-M9S)
+              </td>
+<td>EFP1
+              </td>
+<td>3.9
+             - 4
+              </td>
+<td>1
+            - 16
+              </td>
+<td>8
+              </td>
+<td>0.00
+            
+              </td>
+<td>0.00
+            
+              </td>
+<td>0.00
+              </td>
+<td>1.00
+              </td>
+        </tr>
+
+        
+<tr data-row="EFP2" class="   ">
+          
+          
+<td>E980 (9080-M9S)
+              </td>
+<td>EFP2
+              </td>
+<td>3.7
+             - 3.9
+              </td>
+<td>1
+            - 16
+              </td>
+<td>10
+              </td>
+<td>0.00
+            
+              </td>
+<td>0.00
+            
+              </td>
+<td>0.00
+              </td>
+<td>1.00
+              </td>
+        </tr>
+
+        
+<tr data-row="EFP4" class="   ">
+          
+          
+<td>E980 (9080-M9S)
+              </td>
+<td>EFP4
+              </td>
+<td>3.58
+             - 3.9
+              </td>
+<td>1
+            - 16
+              </td>
+<td>11
+              </td>
+<td>0.00
+            
+              </td>
+<td>0.00
+            
+              </td>
+<td>0.00
+              </td>
+<td>1.00
+              </td>
+        </tr>
+
+        
+<tr data-row="EFP3" class="   ">
+          
+          
+<td>E980 (9080-M9S)
+              </td>
+<td>EFP3
+              </td>
+<td>3.55
+             - 3.9
+              </td>
+<td>1
+            - 16
+              </td>
+<td>12
+              </td>
+<td>0.00
+            
+              </td>
+<td>0.00
+            
+              </td>
+<td>0.00
+              </td>
+<td>1.00
+              </td>
+        </tr>
+
+        
+<tr data-row="EPCE" class="   ">
+          
+          
+<td>710 (8231-E1D)
+              </td>
+<td>EPCE
+              </td>
+<td>3.6
+            
+              </td>
+<td>1
+            
+              </td>
+<td>4
+              </td>
+<td>0.00
+            
+              </td>
+<td>0.00
+            
+              </td>
+<td>0.00
+              </td>
+<td>1.00
+              </td>
+        </tr>
+
+        </tbody></table></div></main>
+
+<div role="presentation" id="ccs-0.ya4bshg97e" class="bx--modal   "><div tabindex="-1" role="dialog" aria-modal="true" aria-label="Disclamer" class="bx--modal-container"><div class="bx--modal-header"><button type="button" aria-label="Close the modal" class="bx--modal-close"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="currentColor" preserveAspectRatio="xMidYMid meet" width="20" height="20" aria-hidden="true" class="bx--modal-close__icon"><path d="M24 9.4L22.6 8 16 14.6 9.4 8 8 9.4 14.6 16 8 22.6 9.4 24 16 17.4 22.6 24 24 22.6 17.4 16 24 9.4z"></path></svg></button>
+      
+      <h3 id="bx--modal-header__heading--modal-ccs-0.ya4bshg97e" class="bx--modal-header__heading">Disclamer</h3>
+      </div>
+    <div id="bx--modal-body--ccs-0.ya4bshg97e" aria-labelledby="bx--modal-header__heading--modal-ccs-0.ya4bshg97e" class="bx--modal-content"><p>Warning Beta software, use with care.</p>
+    <p>This tool is provided as is without warranty of any kind. Refer to IBM,
+        your business partner and/or official IBM documentation.
+    </p>
+    <p>This tool is not affiliated with IBM.</p>
+    
+<div class="bx--form-item bx--checkbox-wrapper"><input type="checkbox" value=""   id="ccs-0.o2dijbv5b2" indeterminate="false" name=""   class="bx--checkbox">
+    <label for="ccs-0.o2dijbv5b2" class="bx--checkbox-label"><span class="bx--checkbox-label-text">
+          I understand and accept
+        </span></label></div></div>
+    
+    </div></div>
+
+
+		<script type="module" data-sveltekit-hydrate="ygnpl8">
+		import { start } from "./_app/immutable/start-22733560.js";
+
+		start({
+			env: {},
+			hydrate: {
+				status: 200,
+				error: null,
+				node_ids: [0, 3],
+				params: {},
+				routeId: "lpars",
+				data: (function(a){return [a,a]}(null)),
+				errors: null
+			},
+			paths: {"base":"","assets":""},
+			target: document.querySelector('[data-sveltekit-hydrate="ygnpl8"]').parentNode,
+			trailing_slash: "never"
+		});
+	</script>
+	<script type="application/json" data-sveltekit-fetched data-url="/data.json">{"status":200,"statusText":"","headers":{"content-type":"application/json"},"body":"{\n    \"version\": \"20220823001\",\n    \"processorFamilies\": [\n        {\n            \"shortName\": \"P10\",\n            \"name\": \"POWER 10\",\n            \"minEntitlement\": 0.05,\n            \"models\": [\n                {\n                    \"type\": \"9105\",\n                    \"model\": \"41B\",\n                    \"name\": \"S1014\",\n                    \"processors\": [\n                        {\n                            \"name\": \"EPG0\",\n                            \"baseFrequency\": \"3\",\n                            \"maxFrequency\": \"3.9\",\n                            \"minSockets\": 1,\n                            \"maxSockets\": 1,\n                            \"coresPerSocket\": 4,\n                            \"cpw\": \"106300\",\n                            \"ibmiTier\": \"P05\",\n                            \"stRperf\": 38.6,\n                            \"smt2Rperf\": 76.4,\n                            \"smt4Rperf\": 102.6,\n                            \"smt8Rperf\": 129.4\n                        },\n                        {\n                            \"name\": \"EPG1\",\n                            \"baseFrequency\": \"3\",\n                            \"maxFrequency\": \"3.9\",\n                            \"minSockets\": 1,\n                            \"maxSockets\": 1,\n                            \"coresPerSocket\": 8,\n                            \"cpw\": \"205300\",\n                            \"ibmiTier\": \"P10\",\n                            \"stRperf\": 77.2,\n                            \"smt2Rperf\": 149.1,\n                            \"smt4Rperf\": 198.8,\n                            \"smt8Rperf\": 254.2\n                        }\n                    ]\n                },\n                {\n                    \"type\": \"9105\",\n                    \"model\": \"22B\",\n                    \"name\": \"S1022s\",\n                    \"processors\": [\n                        {\n                            \"name\": \"EPGR\",\n                            \"baseFrequency\": \"3\",\n                            \"maxFrequency\": \"3.9\",\n                            \"minSockets\": 1,\n                            \"maxSockets\": 1,\n                            \"coresPerSocket\": 4,\n                            \"stRperf\": 38.6,\n                            \"smt2Rperf\": 76.4,\n                            \"smt4Rperf\": 102.6,\n                            \"smt8Rperf\": 129.4\n                        },\n                        {\n                            \"name\": \"EPGQ\",\n                            \"baseFrequency\": \"3\",\n                            \"maxFrequency\": \"3.9\",\n                            \"minSockets\": 1,\n                            \"maxSockets\": 2,\n                            \"coresPerSocket\": 8,\n                            \"cpw\": \"425200\",\n                            \"ibmiTier\": \"P10\",\n                            \"stRperf\": 136,\n                            \"smt2Rperf\": 265.5,\n                            \"smt4Rperf\": 368.1,\n                            \"smt8Rperf\": 477.8,\n                            \"maxCoresPerIbmiLpar\": 4,\n                            \"viosOnlyIbmi\": true\n                        }\n                    ]\n                },\n                {\n                    \"type\": \"9105\",\n                    \"model\": \"22A\",\n                    \"name\": \"S1022\",\n                    \"processors\": [\n                        {\n                            \"name\": \"EPG9\",\n                            \"baseFrequency\": \"2.9\",\n                            \"maxFrequency\": \"4\",\n                            \"minSockets\": 1,\n                            \"maxSockets\": 2,\n                            \"coresPerSocket\": 12,\n                            \"cpw\": \"637800\",\n                            \"ibmiTier\": \"P10\",\n                            \"stRperf\": 205.5,\n                            \"smt2Rperf\": 401.4,\n                            \"smt4Rperf\": 548.1,\n                            \"smt8Rperf\": 699.2,\n                            \"maxCoresPerIbmiLpar\": 4,\n                            \"viosOnlyIbmi\": true\n                        },\n                        {\n                            \"name\": \"EPG8\",\n                            \"baseFrequency\": \"2.75\",\n                            \"maxFrequency\": \"4\",\n                            \"minSockets\": 2,\n                            \"maxSockets\": 2,\n                            \"coresPerSocket\": 16,\n                            \"cpw\": \"850400\",\n                            \"ibmiTier\": \"P10\",\n                            \"stRperf\": 274.3,\n                            \"smt2Rperf\": 539.4,\n                            \"smt4Rperf\": 728.3,\n                            \"smt8Rperf\": 924.1,\n                            \"maxCoresPerIbmiLpar\": 4,\n                            \"viosOnlyIbmi\": true\n                        },\n                        {\n                            \"name\": \"EPGA\",\n                            \"baseFrequency\": \"2.45\",\n                            \"maxFrequency\": \"2.9\",\n                            \"minSockets\": 2,\n                            \"maxSockets\": 2,\n                            \"coresPerSocket\": 20,\n                            \"cpw\": \"1047000\",\n                            \"ibmiTier\": \"P10\",\n                            \"stRperf\": 324.1,\n                            \"smt2Rperf\": 602.4,\n                            \"smt4Rperf\": 798.4,\n                            \"smt8Rperf\": 1024.1,\n                            \"maxCoresPerIbmiLpar\": 4,\n                            \"viosOnlyIbmi\": true\n                        }\n                    ]\n                },\n                {\n                    \"type\": \"9786\",\n                    \"model\": \"22H\",\n                    \"name\": \"L1022\",\n                    \"processors\": [\n                        {\n                            \"name\": \"EPGG\",\n                            \"baseFrequency\": \"2.9\",\n                            \"maxFrequency\": \"4\",\n                            \"minSockets\": 1,\n                            \"maxSockets\": 2,\n                            \"coresPerSocket\": 12,\n                            \"cpw\": \"637800\",\n                            \"ibmiTier\": \"P10\",\n                            \"stRperf\": 205.5,\n                            \"smt2Rperf\": 401.4,\n                            \"smt4Rperf\": 548.1,\n                            \"smt8Rperf\": 699.2,\n                            \"maxCoresPerIbmiLpar\": 4,\n                            \"maxAixIbmiCorePercent\": 25,\n                            \"viosOnlyIbmi\": true\n                        },\n                        {\n                            \"name\": \"EPGF\",\n                            \"baseFrequency\": \"2.75\",\n                            \"maxFrequency\": \"4\",\n                            \"minSockets\": 2,\n                            \"maxSockets\": 2,\n                            \"coresPerSocket\": 16,\n                            \"cpw\": \"850400\",\n                            \"ibmiTier\": \"P10\",\n                            \"stRperf\": 274.3,\n                            \"smt2Rperf\": 539.4,\n                            \"smt4Rperf\": 728.3,\n                            \"smt8Rperf\": 924.1,\n                            \"maxCoresPerIbmiLpar\": 4,\n                            \"maxAixIbmiCorePercent\": 25,\n                            \"viosOnlyIbmi\": true\n                        },\n                        {\n                            \"name\": \"EPGH\",\n                            \"baseFrequency\": \"2.45\",\n                            \"maxFrequency\": \"3.9\",\n                            \"minSockets\": 2,\n                            \"maxSockets\": 2,\n                            \"coresPerSocket\": 20,\n                            \"cpw\": \"1047000\",\n                            \"ibmiTier\": \"P10\",\n                            \"stRperf\": 324.1,\n                            \"smt2Rperf\": 602.4,\n                            \"smt4Rperf\": 798.4,\n                            \"smt8Rperf\": 1024.1,\n                            \"maxCoresPerIbmiLpar\": 4,\n                            \"maxAixIbmiCorePercent\": 25,\n                            \"viosOnlyIbmi\": true\n                        }\n                    ]\n                },\n                {\n                    \"type\": \"9105\",\n                    \"model\": \"42A\",\n                    \"name\": \"S1024\",\n                    \"processors\": [\n                        {\n                            \"name\": \"EPGM\",\n                            \"baseFrequency\": \"3.4\",\n                            \"maxFrequency\": \"4\",\n                            \"minSockets\": 1,\n                            \"maxSockets\": 2,\n                            \"coresPerSocket\": 12,\n                            \"cpw\": \"585100\",\n                            \"ibmiTier\": \"P20\",\n                            \"stRperf\": 220.1,\n                            \"smt2Rperf\": 438,\n                            \"smt4Rperf\": 629.1,\n                            \"smt8Rperf\": 810.6\n                        },\n                        {\n                            \"name\": \"EPGC\",\n                            \"baseFrequency\": \"3.1\",\n                            \"maxFrequency\": \"4\",\n                            \"minSockets\": 2,\n                            \"maxSockets\": 2,\n                            \"coresPerSocket\": 16,\n                            \"cpw\": \"725000\",\n                            \"ibmiTier\": \"P30\",\n                            \"stRperf\": 286.9,\n                            \"smt2Rperf\": 567.6,\n                            \"smt4Rperf\": 787.9,\n                            \"smt8Rperf\": 1013.4\n                        },\n                        {\n                            \"name\": \"EPGE\",\n                            \"baseFrequency\": \"2.75\",\n                            \"maxFrequency\": \"3.9\",\n                            \"minSockets\": 2,\n                            \"maxSockets\": 2,\n                            \"coresPerSocket\": 24,\n                            \"cpw\": \"947500\",\n                            \"ibmiTier\": \"P30\",\n                            \"stRperf\": 408.8,\n                            \"smt2Rperf\": 780.8,\n                            \"smt4Rperf\": 1039.4,\n                            \"smt8Rperf\": 1331.8\n                        }\n                    ]\n                },\n                {\n                    \"type\": \"9786\",\n                    \"model\": \"42H\",\n                    \"name\": \"L1024\",\n                    \"processors\": [\n                        {\n                            \"name\": \"EPGN\",\n                            \"baseFrequency\": \"3.4\",\n                            \"maxFrequency\": \"4\",\n                            \"minSockets\": 1,\n                            \"maxSockets\": 2,\n                            \"coresPerSocket\": 12,\n                            \"cpw\": \"585100\",\n                            \"ibmiTier\": \"P20\",\n                            \"stRperf\": 220.1,\n                            \"smt2Rperf\": 438,\n                            \"smt4Rperf\": 629.1,\n                            \"smt8Rperf\": 810.6,\n                            \"maxAixIbmiCorePercent\": 25\n                        },\n                        {\n                            \"name\": \"EPGJ\",\n                            \"baseFrequency\": \"3.1\",\n                            \"maxFrequency\": \"4\",\n                            \"minSockets\": 2,\n                            \"maxSockets\": 2,\n                            \"coresPerSocket\": 16,\n                            \"cpw\": \"725000\",\n                            \"ibmiTier\": \"P30\",\n                            \"stRperf\": 286.9,\n                            \"smt2Rperf\": 567.6,\n                            \"smt4Rperf\": 787.9,\n                            \"smt8Rperf\": 1013.4,\n                            \"maxAixIbmiCorePercent\": 25\n                        },\n                        {\n                            \"name\": \"EPGL\",\n                            \"baseFrequency\": \"2.75\",\n                            \"maxFrequency\": \"3.9\",\n                            \"minSockets\": 2,\n                            \"maxSockets\": 2,\n                            \"coresPerSocket\": 24,\n                            \"cpw\": \"947500\",\n                            \"ibmiTier\": \"P30\",\n                            \"stRperf\": 408.8,\n                            \"smt2Rperf\": 780.8,\n                            \"smt4Rperf\": 1039.4,\n                            \"smt8Rperf\": 1331.8,\n                            \"maxAixIbmiCorePercent\": 25\n                        }\n                    ]\n                },\n                {\n                    \"type\": \"9043\",\n                    \"model\": \"MRX\",\n                    \"name\": \"E1050\",\n                    \"processors\": [\n                        {\n                            \"name\": \"EHC8\",\n                            \"baseFrequency\": \"2.95\",\n                            \"maxFrequency\": \"3.9\",\n                            \"minSockets\": 2,\n                            \"maxSockets\": 4,\n                            \"coresPerSocket\": 24,\n                            \"stRperf\": 824.2,\n                            \"smt2Rperf\": 1578.8,\n                            \"smt4Rperf\": 2134.3,\n                            \"smt8Rperf\": 2688.9\n                        },\n                        {\n                            \"name\": \"EPEU\",\n                            \"baseFrequency\": \"3.35\",\n                            \"maxFrequency\": \"4\",\n                            \"minSockets\": 2,\n                            \"maxSockets\": 4,\n                            \"coresPerSocket\": 12,\n                            \"stRperf\": 444.7,\n                            \"smt2Rperf\": 887.6,\n                            \"smt4Rperf\": 1250.6,\n                            \"smt8Rperf\": 1596.8\n                        },\n                        {\n                            \"name\": \"EPEV\",\n                            \"baseFrequency\": \"3.2\",\n                            \"maxFrequency\": \"4\",\n                            \"minSockets\": 2,\n                            \"maxSockets\": 4,\n                            \"coresPerSocket\": 18,\n                            \"stRperf\": 650.6,\n                            \"smt2Rperf\": 1275.3,\n                            \"smt4Rperf\": 1760.6,\n                            \"smt8Rperf\": 2216.4\n                        },\n                        {\n                            \"name\": \"EPGW\",\n                            \"baseFrequency\": \"2.95\",\n                            \"maxFrequency\": \"3.9\",\n                            \"minSockets\": 2,\n                            \"maxSockets\": 4,\n                            \"coresPerSocket\": 24,\n                            \"stRperf\": 824.2,\n                            \"smt2Rperf\": 1578.8,\n                            \"smt4Rperf\": 2134.3,\n                            \"smt8Rperf\": 2688.9\n                        }\n                    ]\n                },\n                {\n                    \"type\": \"9080\",\n                    \"model\": \"HEX\",\n                    \"name\": \"E1080\",\n                    \"processors\": [\n                        {\n                            \"name\": \"EDP2\",\n                            \"baseFrequency\": \"3.65\",\n                            \"maxFrequency\": \"3.9\",\n                            \"minSockets\": 4,\n                            \"maxSockets\": 16,\n                            \"cpw\": \"3678000\",\n                            \"coresPerSocket\": 10,\n                            \"ibmiTier\": \"P30\",\n                            \"stRperf\": 1479.2,\n                            \"smt2Rperf\": 2990.1,\n                            \"smt4Rperf\": 4225.2,\n                            \"smt8Rperf\": 5467.1\n                        },\n                        {\n                            \"name\": \"EDP3\",\n                            \"baseFrequency\": \"3.6\",\n                            \"maxFrequency\": \"4.15\",\n                            \"minSockets\": 4,\n                            \"maxSockets\": 16,\n                            \"cpw\": \"4504000\",\n                            \"coresPerSocket\": 12,\n                            \"ibmiTier\": \"P30\",\n                            \"stRperf\": 1888.7,\n                            \"smt2Rperf\": 3707.4,\n                            \"smt4Rperf\": 5261.8,\n                            \"smt8Rperf\": 6722.3\n                        },\n                        {\n                            \"name\": \"EDP4\",\n                            \"baseFrequency\": \"3.55\",\n                            \"maxFrequency\": \"4\",\n                            \"minSockets\": 4,\n                            \"maxSockets\": 16,\n                            \"cpw\": \"5266000\",\n                            \"coresPerSocket\": 15,\n                            \"ibmiTier\": \"P30\",\n                            \"stRperf\": 2250.8,\n                            \"smt2Rperf\": 4492.7,\n                            \"smt4Rperf\": 6314.4,\n                            \"smt8Rperf\": 7998.6\n                        }\n                    ]\n                }\n            ]\n        },\n        {\n            \"shortName\": \"P9\",\n            \"name\": \"POWER 9\",\n            \"minEntitlement\": 0.05,\n            \"models\": [\n                {\n                    \"type\": \"9009\",\n                    \"model\": \"41G\",\n                    \"name\": \"S914\",\n                    \"processors\": [\n                        {\n                            \"name\": \"EP50\",\n                            \"baseFrequency\": \"2.3\",\n                            \"maxFrequency\": \"3.8\",\n                            \"minSockets\": 1,\n                            \"maxSockets\": 1,\n                            \"coresPerSocket\": 4,\n                            \"cpw\": \"52500\",\n                            \"ibmiTier\": \"P05\",\n                            \"stRperf\": 27.4,\n                            \"smt2Rperf\": 46.6,\n                            \"smt4Rperf\": 64.2,\n                            \"smt8Rperf\": 80.9\n                        },\n                        {\n                            \"name\": \"EP51\",\n                            \"baseFrequency\": \"2.3\",\n                            \"maxFrequency\": \"3.8\",\n                            \"minSockets\": 1,\n                            \"maxSockets\": 1,\n                            \"coresPerSocket\": 6,\n                            \"cpw\": \"78500\",\n                            \"ibmiTier\": \"P10\",\n                            \"stRperf\": 40.1,\n                            \"smt2Rperf\": 68.2,\n                            \"smt4Rperf\": 94.1,\n                            \"smt8Rperf\": 118.6\n                        },\n                        {\n                            \"name\": \"EP52\",\n                            \"baseFrequency\": \"2.8\",\n                            \"maxFrequency\": \"3.8\",\n                            \"minSockets\": 1,\n                            \"maxSockets\": 1,\n                            \"coresPerSocket\": 8,\n                            \"cpw\": \"122500\",\n                            \"ibmiTier\": \"P10\",\n                            \"stRperf\": 62,\n                            \"smt2Rperf\": 105.4,\n                            \"smt4Rperf\": 145.4,\n                            \"smt8Rperf\": 183.2\n                        }\n                    ]\n                },\n                {\n                    \"type\": \"9009\",\n                    \"model\": \"22G\",\n                    \"name\": \"S922\",\n                    \"processors\": [\n                        {\n                            \"name\": \"EP5Y\",\n                            \"baseFrequency\": \"2.8\",\n                            \"maxFrequency\": \"3.8\",\n                            \"minSockets\": 1,\n                            \"maxSockets\": 1,\n                            \"coresPerSocket\": 1,\n                            \"cpw\": \"19000\",\n                            \"ibmiTier\": \"P05\",\n                            \"noVios\": true\n                        },\n                        {\n                            \"name\": \"EP58\",\n                            \"baseFrequency\": \"3.4\",\n                            \"maxFrequency\": \"3.9\",\n                            \"minSockets\": 1,\n                            \"maxSockets\": 2,\n                            \"coresPerSocket\": 8,\n                            \"cpw\": \"272000\",\n                            \"ibmiTier\": \"P10\",\n                            \"stRperf\": 133.4,\n                            \"smt2Rperf\": 226.9,\n                            \"smt4Rperf\": 313.1,\n                            \"smt8Rperf\": 394.5,\n                            \"maxCoresPerIbmiLpar\": 4,\n                            \"viosOnlyIbmi\": true\n                        },\n                        {\n                            \"name\": \"EP59\",\n                            \"baseFrequency\": \"2.9\",\n                            \"maxFrequency\": \"3.8\",\n                            \"minSockets\": 1,\n                            \"maxSockets\": 2,\n                            \"coresPerSocket\": 10,\n                            \"cpw\": \"300000\",\n                            \"ibmiTier\": \"P10\",\n                            \"stRperf\": 144.2,\n                            \"smt2Rperf\": 245.2,\n                            \"smt4Rperf\": 338.4,\n                            \"smt8Rperf\": 426.4,\n                            \"maxCoresPerIbmiLpar\": 4,\n                            \"viosOnlyIbmi\": true\n                        },\n                        {\n                            \"name\": \"EP5B\",\n                            \"baseFrequency\": \"2.8\",\n                            \"maxFrequency\": \"3.8\",\n                            \"minSockets\": 1,\n                            \"maxSockets\": 2,\n                            \"coresPerSocket\": 11,\n                            \"cpw\": \"330000\",\n                            \"ibmiTier\": \"P10\",\n                            \"stRperf\": 154.3,\n                            \"smt2Rperf\": 262.3,\n                            \"smt4Rperf\": 362,\n                            \"smt8Rperf\": 456.1,\n                            \"maxCoresPerIbmiLpar\": 4,\n                            \"viosOnlyIbmi\": true\n                        },\n                        {\n                            \"name\": \"EP5W\",\n                            \"baseFrequency\": \"2.8\",\n                            \"maxFrequency\": \"3.8\",\n                            \"minSockets\": 1,\n                            \"maxSockets\": 2,\n                            \"coresPerSocket\": 12,\n                            \"cpw\": \"360000\",\n                            \"ibmiTier\": \"P10\",\n                            \"maxCoresPerIbmiLpar\": 4,\n                            \"viosOnlyIbmi\": true\n                        }\n                    ]\n                },\n                {\n                    \"type\": \"9009\",\n                    \"model\": \"42G\",\n                    \"name\": \"S924\",\n                    \"processors\": [\n                        {\n                            \"name\": \"EP5E\",\n                            \"baseFrequency\": \"3.8\",\n                            \"maxFrequency\": \"4\",\n                            \"minSockets\": 1,\n                            \"maxSockets\": 2,\n                            \"coresPerSocket\": 8,\n                            \"cpw\": \"268500\",\n                            \"ibmiTier\": \"P20\",\n                            \"stRperf\": 144.7,\n                            \"smt2Rperf\": 246,\n                            \"smt4Rperf\": 339.5,\n                            \"smt8Rperf\": 427.8\n                        },\n                        {\n                            \"name\": \"EP5F\",\n                            \"baseFrequency\": \"3.5\",\n                            \"maxFrequency\": \"3.9\",\n                            \"minSockets\": 1,\n                            \"maxSockets\": 2,\n                            \"coresPerSocket\": 10,\n                            \"cpw\": \"318000\",\n                            \"ibmiTier\": \"P20\",\n                            \"stRperf\": 169,\n                            \"smt2Rperf\": 287.2,\n                            \"smt4Rperf\": 396.4,\n                            \"smt8Rperf\": 499.5\n                        },\n                        {\n                            \"name\": \"EP5H\",\n                            \"baseFrequency\": \"3.45\",\n                            \"maxFrequency\": \"3.9\",\n                            \"minSockets\": 1,\n                            \"maxSockets\": 2,\n                            \"coresPerSocket\": 11,\n                            \"cpw\": \"350000\",\n                            \"ibmiTier\": \"P20\",\n                            \"stRperf\": 182.9,\n                            \"smt2Rperf\": 310.9,\n                            \"smt4Rperf\": 429,\n                            \"smt8Rperf\": 540.6\n                        },\n                        {\n                            \"name\": \"EP5G\",\n                            \"baseFrequency\": \"3.4\",\n                            \"maxFrequency\": \"3.9\",\n                            \"minSockets\": 1,\n                            \"maxSockets\": 2,\n                            \"coresPerSocket\": 12,\n                            \"cpw\": \"370700\",\n                            \"ibmiTier\": \"P20\",\n                            \"stRperf\": 197.2,\n                            \"smt2Rperf\": 335.3,\n                            \"smt4Rperf\": 462.7,\n                            \"smt8Rperf\": 583.1\n                        }\n                    ]\n                },\n                {\n                    \"type\": \"9009\",\n                    \"model\": \"41A\",\n                    \"name\": \"S914\",\n                    \"processors\": [\n                        {\n                            \"name\": \"EP10\",\n                            \"baseFrequency\": \"2.3\",\n                            \"maxFrequency\": \"3.8\",\n                            \"minSockets\": 1,\n                            \"maxSockets\": 1,\n                            \"coresPerSocket\": 4,\n                            \"cpw\": \"52500\",\n                            \"ibmiTier\": \"P05\",\n                            \"stRperf\": 27.4,\n                            \"smt2Rperf\": 46.6,\n                            \"smt4Rperf\": 64.2,\n                            \"smt8Rperf\": 80.9\n                        },\n                        {\n                            \"name\": \"EP11\",\n                            \"baseFrequency\": \"2.3\",\n                            \"maxFrequency\": \"3.8\",\n                            \"minSockets\": 1,\n                            \"maxSockets\": 1,\n                            \"coresPerSocket\": 6,\n                            \"cpw\": \"78500\",\n                            \"ibmiTier\": \"P10\",\n                            \"stRperf\": 40.1,\n                            \"smt2Rperf\": 68.2,\n                            \"smt4Rperf\": 94.1,\n                            \"smt8Rperf\": 118.6\n                        },\n                        {\n                            \"name\": \"EP12\",\n                            \"baseFrequency\": \"2.8\",\n                            \"maxFrequency\": \"3.8\",\n                            \"minSockets\": 1,\n                            \"maxSockets\": 1,\n                            \"coresPerSocket\": 8,\n                            \"cpw\": \"122500\",\n                            \"ibmiTier\": \"P10\",\n                            \"stRperf\": 62,\n                            \"smt2Rperf\": 105.4,\n                            \"smt4Rperf\": 145.4,\n                            \"smt8Rperf\": 183.2\n                        }\n                    ]\n                },\n                {\n                    \"type\": \"9009\",\n                    \"model\": \"22A\",\n                    \"name\": \"S922\",\n                    \"processors\": [\n                        {\n                            \"name\": \"EP18\",\n                            \"baseFrequency\": \"3.4\",\n                            \"maxFrequency\": \"3.9\",\n                            \"minSockets\": 1,\n                            \"maxSockets\": 2,\n                            \"coresPerSocket\": 8,\n                            \"cpw\": \"272000\",\n                            \"ibmiTier\": \"P10\",\n                            \"stRperf\": 133.4,\n                            \"smt2Rperf\": 226.9,\n                            \"smt4Rperf\": 313.1,\n                            \"smt8Rperf\": 394.5,\n                            \"maxCoresPerIbmiLpar\": 4,\n                            \"viosOnlyIbmi\": true\n                        },\n                        {\n                            \"name\": \"EP19\",\n                            \"baseFrequency\": \"2.9\",\n                            \"maxFrequency\": \"3.8\",\n                            \"minSockets\": 1,\n                            \"maxSockets\": 2,\n                            \"coresPerSocket\": 10,\n                            \"cpw\": \"300000\",\n                            \"ibmiTier\": \"P10\",\n                            \"stRperf\": 144.2,\n                            \"smt2Rperf\": 245.2,\n                            \"smt4Rperf\": 338.4,\n                            \"smt8Rperf\": 426.4,\n                            \"maxCoresPerIbmiLpar\": 4,\n                            \"viosOnlyIbmi\": true\n                        }\n                    ]\n                },\n                {\n                    \"type\": \"9009\",\n                    \"model\": \"42A\",\n                    \"name\": \"S924\",\n                    \"processors\": [\n                        {\n                            \"name\": \"EP1E\",\n                            \"baseFrequency\": \"3.8\",\n                            \"maxFrequency\": \"4\",\n                            \"minSockets\": 1,\n                            \"maxSockets\": 2,\n                            \"coresPerSocket\": 8,\n                            \"cpw\": \"268500\",\n                            \"ibmiTier\": \"P20\",\n                            \"stRperf\": 144.7,\n                            \"smt2Rperf\": 246,\n                            \"smt4Rperf\": 339.5,\n                            \"smt8Rperf\": 427.8\n                        },\n                        {\n                            \"name\": \"EP1F\",\n                            \"baseFrequency\": \"3.5\",\n                            \"maxFrequency\": \"3.9\",\n                            \"minSockets\": 1,\n                            \"maxSockets\": 2,\n                            \"coresPerSocket\": 10,\n                            \"cpw\": \"318000\",\n                            \"ibmiTier\": \"P20\",\n                            \"stRperf\": 169,\n                            \"smt2Rperf\": 287.2,\n                            \"smt4Rperf\": 396.4,\n                            \"smt8Rperf\": 499.5\n                        },\n                        {\n                            \"name\": \"EP1H\",\n                            \"baseFrequency\": \"3.45\",\n                            \"maxFrequency\": \"3.9\",\n                            \"minSockets\": 1,\n                            \"maxSockets\": 2,\n                            \"coresPerSocket\": 11,\n                            \"cpw\": \"350000\",\n                            \"ibmiTier\": \"P20\",\n                            \"stRperf\": 182.9,\n                            \"smt2Rperf\": 310.9,\n                            \"smt4Rperf\": 429,\n                            \"smt8Rperf\": 540.6\n                        },\n                        {\n                            \"name\": \"EP1G\",\n                            \"baseFrequency\": \"3.4\",\n                            \"maxFrequency\": \"3.9\",\n                            \"minSockets\": 1,\n                            \"maxSockets\": 2,\n                            \"coresPerSocket\": 12,\n                            \"cpw\": \"370700\",\n                            \"ibmiTier\": \"P20\",\n                            \"stRperf\": 197.2,\n                            \"smt2Rperf\": 335.3,\n                            \"smt4Rperf\": 462.7,\n                            \"smt8Rperf\": 583.1\n                        }\n                    ]\n                },\n                {\n                    \"type\": \"9040\",\n                    \"model\": \"MR9\",\n                    \"name\": \"E950\",\n                    \"processors\": [\n                        {\n                            \"name\": \"EPWR\",\n                            \"baseFrequency\": \"3.6\",\n                            \"maxFrequency\": \"3.8\",\n                            \"minSockets\": 2,\n                            \"maxSockets\": 4,\n                            \"coresPerSocket\": 8,\n                            \"stRperf\": 294.4,\n                            \"smt2Rperf\": 500.6,\n                            \"smt4Rperf\": 690.8,\n                            \"smt8Rperf\": 870.4\n                        },\n                        {\n                            \"name\": \"EPWS\",\n                            \"baseFrequency\": \"3.4\",\n                            \"maxFrequency\": \"3.8\",\n                            \"minSockets\": 2,\n                            \"maxSockets\": 4,\n                            \"coresPerSocket\": 10,\n                            \"stRperf\": 349.8,\n                            \"smt2Rperf\": 594.7,\n                            \"smt4Rperf\": 820.7,\n                            \"smt8Rperf\": 1034.1\n                        },\n                        {\n                            \"name\": \"EPWY\",\n                            \"baseFrequency\": \"3.2\",\n                            \"maxFrequency\": \"3.8\",\n                            \"minSockets\": 2,\n                            \"maxSockets\": 4,\n                            \"coresPerSocket\": 11,\n                            \"stRperf\": 362.6,\n                            \"smt2Rperf\": 616.4,\n                            \"smt4Rperf\": 850.7,\n                            \"smt8Rperf\": 1071.9\n                        },\n                        {\n                            \"name\": \"EPWT\",\n                            \"baseFrequency\": \"3.15\",\n                            \"maxFrequency\": \"3.8\",\n                            \"minSockets\": 2,\n                            \"maxSockets\": 4,\n                            \"coresPerSocket\": 12,\n                            \"stRperf\": 387.8,\n                            \"smt2Rperf\": 659.3,\n                            \"smt4Rperf\": 909.9,\n                            \"smt8Rperf\": 1146.4\n                        }\n                    ]\n                },\n                {\n                    \"type\": \"9080\",\n                    \"model\": \"M9S\",\n                    \"name\": \"E980\",\n                    \"processors\": [\n                        {\n                            \"name\": \"EFP0\",\n                            \"baseFrequency\": \"3.58\",\n                            \"maxFrequency\": \"3.9\",\n                            \"minSockets\": 1,\n                            \"maxSockets\": 16,\n                            \"coresPerSocket\": 6,\n                            \"cpw\": \"1522000\",\n                            \"ibmiTier\": \"P30\",\n                            \"stRperf\": 909.9,\n                            \"smt2Rperf\": 1546.8,\n                            \"smt4Rperf\": 2134.6,\n                            \"smt8Rperf\": 2689.4\n                        },\n                        {\n                            \"name\": \"EFP1\",\n                            \"baseFrequency\": \"3.9\",\n                            \"maxFrequency\": \"4\",\n                            \"minSockets\": 1,\n                            \"maxSockets\": 16,\n                            \"coresPerSocket\": 8,\n                            \"cpw\": \"2030000\",\n                            \"ibmiTier\": \"P30\",\n                            \"stRperf\": 1231.4,\n                            \"smt2Rperf\": 2093.4,\n                            \"smt4Rperf\": 2888.8,\n                            \"smt8Rperf\": 3639.9\n                        },\n                        {\n                            \"name\": \"EFP2\",\n                            \"baseFrequency\": \"3.7\",\n                            \"maxFrequency\": \"3.9\",\n                            \"minSockets\": 1,\n                            \"maxSockets\": 16,\n                            \"coresPerSocket\": 10,\n                            \"cpw\": \"2439000\",\n                            \"ibmiTier\": \"P30\",\n                            \"stRperf\": 1486,\n                            \"smt2Rperf\": 2526.1,\n                            \"smt4Rperf\": 3486,\n                            \"smt8Rperf\": 4392.4\n                        },\n                        {\n                            \"name\": \"EFP4\",\n                            \"baseFrequency\": \"3.58\",\n                            \"maxFrequency\": \"3.9\",\n                            \"minSockets\": 1,\n                            \"maxSockets\": 16,\n                            \"coresPerSocket\": 11,\n                            \"cpw\": \"2549000\",\n                            \"ibmiTier\": \"P30\",\n                            \"stRperf\": 1598.7,\n                            \"smt2Rperf\": 2717.8,\n                            \"smt4Rperf\": 3750.6,\n                            \"smt8Rperf\": 4725.8\n                        },\n                        {\n                            \"name\": \"EFP3\",\n                            \"baseFrequency\": \"3.55\",\n                            \"maxFrequency\": \"3.9\",\n                            \"minSockets\": 1,\n                            \"maxSockets\": 16,\n                            \"coresPerSocket\": 12,\n                            \"cpw\": \"2743000\",\n                            \"ibmiTier\": \"P30\",\n                            \"stRperf\": 1718.8,\n                            \"smt2Rperf\": 2922,\n                            \"smt4Rperf\": 4032.3,\n                            \"smt8Rperf\": 5080.7\n                        }\n                    ]\n                }\n            ]\n        },\n        {\n            \"shortName\": \"P7+\",\n            \"name\": \"POWER 7+\",\n            \"minEntitlement\": 0.05,\n            \"models\": [\n                {\n                    \"type\": \"8231\",\n                    \"model\": \"E1D\",\n                    \"name\": \"710\",\n                    \"processors\": [\n                        {\n                            \"name\": \"EPCE\",\n                            \"baseFrequency\": \"3.6\",\n                            \"minSockets\": 1,\n                            \"maxSockets\": 1,\n                            \"coresPerSocket\": 4,\n                            \"cpw\": 28400,\n                            \"ibmiTier\": \"P05\",\n                            \"smt4Rperf\": 53.9\n                        }\n                    ]\n                }\n            ]\n        }\n    ]\n}"}</script></div>
+	</body>
+</html>
