@@ -1,0 +1,880 @@
+{
+    "version": "20220823001",
+    "processorFamilies": [
+        {
+            "shortName": "P10",
+            "name": "POWER 10",
+            "minEntitlement": 0.05,
+            "models": [
+                {
+                    "type": "9105",
+                    "model": "41B",
+                    "name": "S1014",
+                    "processors": [
+                        {
+                            "name": "EPG0",
+                            "baseFrequency": "3",
+                            "maxFrequency": "3.9",
+                            "minSockets": 1,
+                            "maxSockets": 1,
+                            "coresPerSocket": 4,
+                            "cpw": "106300",
+                            "ibmiTier": "P05",
+                            "stRperf": 38.6,
+                            "smt2Rperf": 76.4,
+                            "smt4Rperf": 102.6,
+                            "smt8Rperf": 129.4
+                        },
+                        {
+                            "name": "EPG1",
+                            "baseFrequency": "3",
+                            "maxFrequency": "3.9",
+                            "minSockets": 1,
+                            "maxSockets": 1,
+                            "coresPerSocket": 8,
+                            "cpw": "205300",
+                            "ibmiTier": "P10",
+                            "stRperf": 77.2,
+                            "smt2Rperf": 149.1,
+                            "smt4Rperf": 198.8,
+                            "smt8Rperf": 254.2
+                        }
+                    ]
+                },
+                {
+                    "type": "9105",
+                    "model": "22B",
+                    "name": "S1022s",
+                    "processors": [
+                        {
+                            "name": "EPGR",
+                            "baseFrequency": "3",
+                            "maxFrequency": "3.9",
+                            "minSockets": 1,
+                            "maxSockets": 1,
+                            "coresPerSocket": 4,
+                            "stRperf": 38.6,
+                            "smt2Rperf": 76.4,
+                            "smt4Rperf": 102.6,
+                            "smt8Rperf": 129.4
+                        },
+                        {
+                            "name": "EPGQ",
+                            "baseFrequency": "3",
+                            "maxFrequency": "3.9",
+                            "minSockets": 1,
+                            "maxSockets": 2,
+                            "coresPerSocket": 8,
+                            "cpw": "425200",
+                            "ibmiTier": "P10",
+                            "stRperf": 136,
+                            "smt2Rperf": 265.5,
+                            "smt4Rperf": 368.1,
+                            "smt8Rperf": 477.8,
+                            "maxCoresPerIbmiLpar": 4,
+                            "viosOnlyIbmi": true
+                        }
+                    ]
+                },
+                {
+                    "type": "9105",
+                    "model": "22A",
+                    "name": "S1022",
+                    "processors": [
+                        {
+                            "name": "EPG9",
+                            "baseFrequency": "2.9",
+                            "maxFrequency": "4",
+                            "minSockets": 1,
+                            "maxSockets": 2,
+                            "coresPerSocket": 12,
+                            "cpw": "637800",
+                            "ibmiTier": "P10",
+                            "stRperf": 205.5,
+                            "smt2Rperf": 401.4,
+                            "smt4Rperf": 548.1,
+                            "smt8Rperf": 699.2,
+                            "maxCoresPerIbmiLpar": 4,
+                            "viosOnlyIbmi": true
+                        },
+                        {
+                            "name": "EPG8",
+                            "baseFrequency": "2.75",
+                            "maxFrequency": "4",
+                            "minSockets": 2,
+                            "maxSockets": 2,
+                            "coresPerSocket": 16,
+                            "cpw": "850400",
+                            "ibmiTier": "P10",
+                            "stRperf": 274.3,
+                            "smt2Rperf": 539.4,
+                            "smt4Rperf": 728.3,
+                            "smt8Rperf": 924.1,
+                            "maxCoresPerIbmiLpar": 4,
+                            "viosOnlyIbmi": true
+                        },
+                        {
+                            "name": "EPGA",
+                            "baseFrequency": "2.45",
+                            "maxFrequency": "2.9",
+                            "minSockets": 2,
+                            "maxSockets": 2,
+                            "coresPerSocket": 20,
+                            "cpw": "1047000",
+                            "ibmiTier": "P10",
+                            "stRperf": 324.1,
+                            "smt2Rperf": 602.4,
+                            "smt4Rperf": 798.4,
+                            "smt8Rperf": 1024.1,
+                            "maxCoresPerIbmiLpar": 4,
+                            "viosOnlyIbmi": true
+                        }
+                    ]
+                },
+                {
+                    "type": "9786",
+                    "model": "22H",
+                    "name": "L1022",
+                    "processors": [
+                        {
+                            "name": "EPGG",
+                            "baseFrequency": "2.9",
+                            "maxFrequency": "4",
+                            "minSockets": 1,
+                            "maxSockets": 2,
+                            "coresPerSocket": 12,
+                            "cpw": "637800",
+                            "ibmiTier": "P10",
+                            "stRperf": 205.5,
+                            "smt2Rperf": 401.4,
+                            "smt4Rperf": 548.1,
+                            "smt8Rperf": 699.2,
+                            "maxCoresPerIbmiLpar": 4,
+                            "maxAixIbmiCorePercent": 25,
+                            "viosOnlyIbmi": true
+                        },
+                        {
+                            "name": "EPGF",
+                            "baseFrequency": "2.75",
+                            "maxFrequency": "4",
+                            "minSockets": 2,
+                            "maxSockets": 2,
+                            "coresPerSocket": 16,
+                            "cpw": "850400",
+                            "ibmiTier": "P10",
+                            "stRperf": 274.3,
+                            "smt2Rperf": 539.4,
+                            "smt4Rperf": 728.3,
+                            "smt8Rperf": 924.1,
+                            "maxCoresPerIbmiLpar": 4,
+                            "maxAixIbmiCorePercent": 25,
+                            "viosOnlyIbmi": true
+                        },
+                        {
+                            "name": "EPGH",
+                            "baseFrequency": "2.45",
+                            "maxFrequency": "3.9",
+                            "minSockets": 2,
+                            "maxSockets": 2,
+                            "coresPerSocket": 20,
+                            "cpw": "1047000",
+                            "ibmiTier": "P10",
+                            "stRperf": 324.1,
+                            "smt2Rperf": 602.4,
+                            "smt4Rperf": 798.4,
+                            "smt8Rperf": 1024.1,
+                            "maxCoresPerIbmiLpar": 4,
+                            "maxAixIbmiCorePercent": 25,
+                            "viosOnlyIbmi": true
+                        }
+                    ]
+                },
+                {
+                    "type": "9105",
+                    "model": "42A",
+                    "name": "S1024",
+                    "processors": [
+                        {
+                            "name": "EPGM",
+                            "baseFrequency": "3.4",
+                            "maxFrequency": "4",
+                            "minSockets": 1,
+                            "maxSockets": 2,
+                            "coresPerSocket": 12,
+                            "cpw": "585100",
+                            "ibmiTier": "P20",
+                            "stRperf": 220.1,
+                            "smt2Rperf": 438,
+                            "smt4Rperf": 629.1,
+                            "smt8Rperf": 810.6
+                        },
+                        {
+                            "name": "EPGC",
+                            "baseFrequency": "3.1",
+                            "maxFrequency": "4",
+                            "minSockets": 2,
+                            "maxSockets": 2,
+                            "coresPerSocket": 16,
+                            "cpw": "725000",
+                            "ibmiTier": "P30",
+                            "stRperf": 286.9,
+                            "smt2Rperf": 567.6,
+                            "smt4Rperf": 787.9,
+                            "smt8Rperf": 1013.4
+                        },
+                        {
+                            "name": "EPGE",
+                            "baseFrequency": "2.75",
+                            "maxFrequency": "3.9",
+                            "minSockets": 2,
+                            "maxSockets": 2,
+                            "coresPerSocket": 24,
+                            "cpw": "947500",
+                            "ibmiTier": "P30",
+                            "stRperf": 408.8,
+                            "smt2Rperf": 780.8,
+                            "smt4Rperf": 1039.4,
+                            "smt8Rperf": 1331.8
+                        }
+                    ]
+                },
+                {
+                    "type": "9786",
+                    "model": "42H",
+                    "name": "L1024",
+                    "processors": [
+                        {
+                            "name": "EPGN",
+                            "baseFrequency": "3.4",
+                            "maxFrequency": "4",
+                            "minSockets": 1,
+                            "maxSockets": 2,
+                            "coresPerSocket": 12,
+                            "cpw": "585100",
+                            "ibmiTier": "P20",
+                            "stRperf": 220.1,
+                            "smt2Rperf": 438,
+                            "smt4Rperf": 629.1,
+                            "smt8Rperf": 810.6,
+                            "maxAixIbmiCorePercent": 25
+                        },
+                        {
+                            "name": "EPGJ",
+                            "baseFrequency": "3.1",
+                            "maxFrequency": "4",
+                            "minSockets": 2,
+                            "maxSockets": 2,
+                            "coresPerSocket": 16,
+                            "cpw": "725000",
+                            "ibmiTier": "P30",
+                            "stRperf": 286.9,
+                            "smt2Rperf": 567.6,
+                            "smt4Rperf": 787.9,
+                            "smt8Rperf": 1013.4,
+                            "maxAixIbmiCorePercent": 25
+                        },
+                        {
+                            "name": "EPGL",
+                            "baseFrequency": "2.75",
+                            "maxFrequency": "3.9",
+                            "minSockets": 2,
+                            "maxSockets": 2,
+                            "coresPerSocket": 24,
+                            "cpw": "947500",
+                            "ibmiTier": "P30",
+                            "stRperf": 408.8,
+                            "smt2Rperf": 780.8,
+                            "smt4Rperf": 1039.4,
+                            "smt8Rperf": 1331.8,
+                            "maxAixIbmiCorePercent": 25
+                        }
+                    ]
+                },
+                {
+                    "type": "9043",
+                    "model": "MRX",
+                    "name": "E1050",
+                    "processors": [
+                        {
+                            "name": "EHC8",
+                            "baseFrequency": "2.95",
+                            "maxFrequency": "3.9",
+                            "minSockets": 2,
+                            "maxSockets": 4,
+                            "coresPerSocket": 24,
+                            "stRperf": 824.2,
+                            "smt2Rperf": 1578.8,
+                            "smt4Rperf": 2134.3,
+                            "smt8Rperf": 2688.9
+                        },
+                        {
+                            "name": "EPEU",
+                            "baseFrequency": "3.35",
+                            "maxFrequency": "4",
+                            "minSockets": 2,
+                            "maxSockets": 4,
+                            "coresPerSocket": 12,
+                            "stRperf": 444.7,
+                            "smt2Rperf": 887.6,
+                            "smt4Rperf": 1250.6,
+                            "smt8Rperf": 1596.8
+                        },
+                        {
+                            "name": "EPEV",
+                            "baseFrequency": "3.2",
+                            "maxFrequency": "4",
+                            "minSockets": 2,
+                            "maxSockets": 4,
+                            "coresPerSocket": 18,
+                            "stRperf": 650.6,
+                            "smt2Rperf": 1275.3,
+                            "smt4Rperf": 1760.6,
+                            "smt8Rperf": 2216.4
+                        },
+                        {
+                            "name": "EPGW",
+                            "baseFrequency": "2.95",
+                            "maxFrequency": "3.9",
+                            "minSockets": 2,
+                            "maxSockets": 4,
+                            "coresPerSocket": 24,
+                            "stRperf": 824.2,
+                            "smt2Rperf": 1578.8,
+                            "smt4Rperf": 2134.3,
+                            "smt8Rperf": 2688.9
+                        }
+                    ]
+                },
+                {
+                    "type": "9080",
+                    "model": "HEX",
+                    "name": "E1080",
+                    "processors": [
+                        {
+                            "name": "EDP2",
+                            "baseFrequency": "3.65",
+                            "maxFrequency": "3.9",
+                            "minSockets": 4,
+                            "maxSockets": 16,
+                            "cpw": "3678000",
+                            "coresPerSocket": 10,
+                            "ibmiTier": "P30",
+                            "stRperf": 1479.2,
+                            "smt2Rperf": 2990.1,
+                            "smt4Rperf": 4225.2,
+                            "smt8Rperf": 5467.1
+                        },
+                        {
+                            "name": "EDP3",
+                            "baseFrequency": "3.6",
+                            "maxFrequency": "4.15",
+                            "minSockets": 4,
+                            "maxSockets": 16,
+                            "cpw": "4504000",
+                            "coresPerSocket": 12,
+                            "ibmiTier": "P30",
+                            "stRperf": 1888.7,
+                            "smt2Rperf": 3707.4,
+                            "smt4Rperf": 5261.8,
+                            "smt8Rperf": 6722.3
+                        },
+                        {
+                            "name": "EDP4",
+                            "baseFrequency": "3.55",
+                            "maxFrequency": "4",
+                            "minSockets": 4,
+                            "maxSockets": 16,
+                            "cpw": "5266000",
+                            "coresPerSocket": 15,
+                            "ibmiTier": "P30",
+                            "stRperf": 2250.8,
+                            "smt2Rperf": 4492.7,
+                            "smt4Rperf": 6314.4,
+                            "smt8Rperf": 7998.6
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "shortName": "P9",
+            "name": "POWER 9",
+            "minEntitlement": 0.05,
+            "models": [
+                {
+                    "type": "9009",
+                    "model": "41G",
+                    "name": "S914",
+                    "processors": [
+                        {
+                            "name": "EP50",
+                            "baseFrequency": "2.3",
+                            "maxFrequency": "3.8",
+                            "minSockets": 1,
+                            "maxSockets": 1,
+                            "coresPerSocket": 4,
+                            "cpw": "52500",
+                            "ibmiTier": "P05",
+                            "stRperf": 27.4,
+                            "smt2Rperf": 46.6,
+                            "smt4Rperf": 64.2,
+                            "smt8Rperf": 80.9
+                        },
+                        {
+                            "name": "EP51",
+                            "baseFrequency": "2.3",
+                            "maxFrequency": "3.8",
+                            "minSockets": 1,
+                            "maxSockets": 1,
+                            "coresPerSocket": 6,
+                            "cpw": "78500",
+                            "ibmiTier": "P10",
+                            "stRperf": 40.1,
+                            "smt2Rperf": 68.2,
+                            "smt4Rperf": 94.1,
+                            "smt8Rperf": 118.6
+                        },
+                        {
+                            "name": "EP52",
+                            "baseFrequency": "2.8",
+                            "maxFrequency": "3.8",
+                            "minSockets": 1,
+                            "maxSockets": 1,
+                            "coresPerSocket": 8,
+                            "cpw": "122500",
+                            "ibmiTier": "P10",
+                            "stRperf": 62,
+                            "smt2Rperf": 105.4,
+                            "smt4Rperf": 145.4,
+                            "smt8Rperf": 183.2
+                        }
+                    ]
+                },
+                {
+                    "type": "9009",
+                    "model": "22G",
+                    "name": "S922",
+                    "processors": [
+                        {
+                            "name": "EP5Y",
+                            "baseFrequency": "2.8",
+                            "maxFrequency": "3.8",
+                            "minSockets": 1,
+                            "maxSockets": 1,
+                            "coresPerSocket": 1,
+                            "cpw": "19000",
+                            "ibmiTier": "P05",
+                            "noVios": true
+                        },
+                        {
+                            "name": "EP58",
+                            "baseFrequency": "3.4",
+                            "maxFrequency": "3.9",
+                            "minSockets": 1,
+                            "maxSockets": 2,
+                            "coresPerSocket": 8,
+                            "cpw": "272000",
+                            "ibmiTier": "P10",
+                            "stRperf": 133.4,
+                            "smt2Rperf": 226.9,
+                            "smt4Rperf": 313.1,
+                            "smt8Rperf": 394.5,
+                            "maxCoresPerIbmiLpar": 4,
+                            "viosOnlyIbmi": true
+                        },
+                        {
+                            "name": "EP59",
+                            "baseFrequency": "2.9",
+                            "maxFrequency": "3.8",
+                            "minSockets": 1,
+                            "maxSockets": 2,
+                            "coresPerSocket": 10,
+                            "cpw": "300000",
+                            "ibmiTier": "P10",
+                            "stRperf": 144.2,
+                            "smt2Rperf": 245.2,
+                            "smt4Rperf": 338.4,
+                            "smt8Rperf": 426.4,
+                            "maxCoresPerIbmiLpar": 4,
+                            "viosOnlyIbmi": true
+                        },
+                        {
+                            "name": "EP5B",
+                            "baseFrequency": "2.8",
+                            "maxFrequency": "3.8",
+                            "minSockets": 1,
+                            "maxSockets": 2,
+                            "coresPerSocket": 11,
+                            "cpw": "330000",
+                            "ibmiTier": "P10",
+                            "stRperf": 154.3,
+                            "smt2Rperf": 262.3,
+                            "smt4Rperf": 362,
+                            "smt8Rperf": 456.1,
+                            "maxCoresPerIbmiLpar": 4,
+                            "viosOnlyIbmi": true
+                        },
+                        {
+                            "name": "EP5W",
+                            "baseFrequency": "2.8",
+                            "maxFrequency": "3.8",
+                            "minSockets": 1,
+                            "maxSockets": 2,
+                            "coresPerSocket": 12,
+                            "cpw": "360000",
+                            "ibmiTier": "P10",
+                            "maxCoresPerIbmiLpar": 4,
+                            "viosOnlyIbmi": true
+                        }
+                    ]
+                },
+                {
+                    "type": "9009",
+                    "model": "42G",
+                    "name": "S924",
+                    "processors": [
+                        {
+                            "name": "EP5E",
+                            "baseFrequency": "3.8",
+                            "maxFrequency": "4",
+                            "minSockets": 1,
+                            "maxSockets": 2,
+                            "coresPerSocket": 8,
+                            "cpw": "268500",
+                            "ibmiTier": "P20",
+                            "stRperf": 144.7,
+                            "smt2Rperf": 246,
+                            "smt4Rperf": 339.5,
+                            "smt8Rperf": 427.8
+                        },
+                        {
+                            "name": "EP5F",
+                            "baseFrequency": "3.5",
+                            "maxFrequency": "3.9",
+                            "minSockets": 1,
+                            "maxSockets": 2,
+                            "coresPerSocket": 10,
+                            "cpw": "318000",
+                            "ibmiTier": "P20",
+                            "stRperf": 169,
+                            "smt2Rperf": 287.2,
+                            "smt4Rperf": 396.4,
+                            "smt8Rperf": 499.5
+                        },
+                        {
+                            "name": "EP5H",
+                            "baseFrequency": "3.45",
+                            "maxFrequency": "3.9",
+                            "minSockets": 1,
+                            "maxSockets": 2,
+                            "coresPerSocket": 11,
+                            "cpw": "350000",
+                            "ibmiTier": "P20",
+                            "stRperf": 182.9,
+                            "smt2Rperf": 310.9,
+                            "smt4Rperf": 429,
+                            "smt8Rperf": 540.6
+                        },
+                        {
+                            "name": "EP5G",
+                            "baseFrequency": "3.4",
+                            "maxFrequency": "3.9",
+                            "minSockets": 1,
+                            "maxSockets": 2,
+                            "coresPerSocket": 12,
+                            "cpw": "370700",
+                            "ibmiTier": "P20",
+                            "stRperf": 197.2,
+                            "smt2Rperf": 335.3,
+                            "smt4Rperf": 462.7,
+                            "smt8Rperf": 583.1
+                        }
+                    ]
+                },
+                {
+                    "type": "9009",
+                    "model": "41A",
+                    "name": "S914",
+                    "processors": [
+                        {
+                            "name": "EP10",
+                            "baseFrequency": "2.3",
+                            "maxFrequency": "3.8",
+                            "minSockets": 1,
+                            "maxSockets": 1,
+                            "coresPerSocket": 4,
+                            "cpw": "52500",
+                            "ibmiTier": "P05",
+                            "stRperf": 27.4,
+                            "smt2Rperf": 46.6,
+                            "smt4Rperf": 64.2,
+                            "smt8Rperf": 80.9
+                        },
+                        {
+                            "name": "EP11",
+                            "baseFrequency": "2.3",
+                            "maxFrequency": "3.8",
+                            "minSockets": 1,
+                            "maxSockets": 1,
+                            "coresPerSocket": 6,
+                            "cpw": "78500",
+                            "ibmiTier": "P10",
+                            "stRperf": 40.1,
+                            "smt2Rperf": 68.2,
+                            "smt4Rperf": 94.1,
+                            "smt8Rperf": 118.6
+                        },
+                        {
+                            "name": "EP12",
+                            "baseFrequency": "2.8",
+                            "maxFrequency": "3.8",
+                            "minSockets": 1,
+                            "maxSockets": 1,
+                            "coresPerSocket": 8,
+                            "cpw": "122500",
+                            "ibmiTier": "P10",
+                            "stRperf": 62,
+                            "smt2Rperf": 105.4,
+                            "smt4Rperf": 145.4,
+                            "smt8Rperf": 183.2
+                        }
+                    ]
+                },
+                {
+                    "type": "9009",
+                    "model": "22A",
+                    "name": "S922",
+                    "processors": [
+                        {
+                            "name": "EP18",
+                            "baseFrequency": "3.4",
+                            "maxFrequency": "3.9",
+                            "minSockets": 1,
+                            "maxSockets": 2,
+                            "coresPerSocket": 8,
+                            "cpw": "272000",
+                            "ibmiTier": "P10",
+                            "stRperf": 133.4,
+                            "smt2Rperf": 226.9,
+                            "smt4Rperf": 313.1,
+                            "smt8Rperf": 394.5,
+                            "maxCoresPerIbmiLpar": 4,
+                            "viosOnlyIbmi": true
+                        },
+                        {
+                            "name": "EP19",
+                            "baseFrequency": "2.9",
+                            "maxFrequency": "3.8",
+                            "minSockets": 1,
+                            "maxSockets": 2,
+                            "coresPerSocket": 10,
+                            "cpw": "300000",
+                            "ibmiTier": "P10",
+                            "stRperf": 144.2,
+                            "smt2Rperf": 245.2,
+                            "smt4Rperf": 338.4,
+                            "smt8Rperf": 426.4,
+                            "maxCoresPerIbmiLpar": 4,
+                            "viosOnlyIbmi": true
+                        }
+                    ]
+                },
+                {
+                    "type": "9009",
+                    "model": "42A",
+                    "name": "S924",
+                    "processors": [
+                        {
+                            "name": "EP1E",
+                            "baseFrequency": "3.8",
+                            "maxFrequency": "4",
+                            "minSockets": 1,
+                            "maxSockets": 2,
+                            "coresPerSocket": 8,
+                            "cpw": "268500",
+                            "ibmiTier": "P20",
+                            "stRperf": 144.7,
+                            "smt2Rperf": 246,
+                            "smt4Rperf": 339.5,
+                            "smt8Rperf": 427.8
+                        },
+                        {
+                            "name": "EP1F",
+                            "baseFrequency": "3.5",
+                            "maxFrequency": "3.9",
+                            "minSockets": 1,
+                            "maxSockets": 2,
+                            "coresPerSocket": 10,
+                            "cpw": "318000",
+                            "ibmiTier": "P20",
+                            "stRperf": 169,
+                            "smt2Rperf": 287.2,
+                            "smt4Rperf": 396.4,
+                            "smt8Rperf": 499.5
+                        },
+                        {
+                            "name": "EP1H",
+                            "baseFrequency": "3.45",
+                            "maxFrequency": "3.9",
+                            "minSockets": 1,
+                            "maxSockets": 2,
+                            "coresPerSocket": 11,
+                            "cpw": "350000",
+                            "ibmiTier": "P20",
+                            "stRperf": 182.9,
+                            "smt2Rperf": 310.9,
+                            "smt4Rperf": 429,
+                            "smt8Rperf": 540.6
+                        },
+                        {
+                            "name": "EP1G",
+                            "baseFrequency": "3.4",
+                            "maxFrequency": "3.9",
+                            "minSockets": 1,
+                            "maxSockets": 2,
+                            "coresPerSocket": 12,
+                            "cpw": "370700",
+                            "ibmiTier": "P20",
+                            "stRperf": 197.2,
+                            "smt2Rperf": 335.3,
+                            "smt4Rperf": 462.7,
+                            "smt8Rperf": 583.1
+                        }
+                    ]
+                },
+                {
+                    "type": "9040",
+                    "model": "MR9",
+                    "name": "E950",
+                    "processors": [
+                        {
+                            "name": "EPWR",
+                            "baseFrequency": "3.6",
+                            "maxFrequency": "3.8",
+                            "minSockets": 2,
+                            "maxSockets": 4,
+                            "coresPerSocket": 8,
+                            "stRperf": 294.4,
+                            "smt2Rperf": 500.6,
+                            "smt4Rperf": 690.8,
+                            "smt8Rperf": 870.4
+                        },
+                        {
+                            "name": "EPWS",
+                            "baseFrequency": "3.4",
+                            "maxFrequency": "3.8",
+                            "minSockets": 2,
+                            "maxSockets": 4,
+                            "coresPerSocket": 10,
+                            "stRperf": 349.8,
+                            "smt2Rperf": 594.7,
+                            "smt4Rperf": 820.7,
+                            "smt8Rperf": 1034.1
+                        },
+                        {
+                            "name": "EPWY",
+                            "baseFrequency": "3.2",
+                            "maxFrequency": "3.8",
+                            "minSockets": 2,
+                            "maxSockets": 4,
+                            "coresPerSocket": 11,
+                            "stRperf": 362.6,
+                            "smt2Rperf": 616.4,
+                            "smt4Rperf": 850.7,
+                            "smt8Rperf": 1071.9
+                        },
+                        {
+                            "name": "EPWT",
+                            "baseFrequency": "3.15",
+                            "maxFrequency": "3.8",
+                            "minSockets": 2,
+                            "maxSockets": 4,
+                            "coresPerSocket": 12,
+                            "stRperf": 387.8,
+                            "smt2Rperf": 659.3,
+                            "smt4Rperf": 909.9,
+                            "smt8Rperf": 1146.4
+                        }
+                    ]
+                },
+                {
+                    "type": "9080",
+                    "model": "M9S",
+                    "name": "E980",
+                    "processors": [
+                        {
+                            "name": "EFP0",
+                            "baseFrequency": "3.58",
+                            "maxFrequency": "3.9",
+                            "minSockets": 1,
+                            "maxSockets": 16,
+                            "coresPerSocket": 6,
+                            "cpw": "1522000",
+                            "ibmiTier": "P30",
+                            "stRperf": 909.9,
+                            "smt2Rperf": 1546.8,
+                            "smt4Rperf": 2134.6,
+                            "smt8Rperf": 2689.4
+                        },
+                        {
+                            "name": "EFP1",
+                            "baseFrequency": "3.9",
+                            "maxFrequency": "4",
+                            "minSockets": 1,
+                            "maxSockets": 16,
+                            "coresPerSocket": 8,
+                            "cpw": "2030000",
+                            "ibmiTier": "P30",
+                            "stRperf": 1231.4,
+                            "smt2Rperf": 2093.4,
+                            "smt4Rperf": 2888.8,
+                            "smt8Rperf": 3639.9
+                        },
+                        {
+                            "name": "EFP2",
+                            "baseFrequency": "3.7",
+                            "maxFrequency": "3.9",
+                            "minSockets": 1,
+                            "maxSockets": 16,
+                            "coresPerSocket": 10,
+                            "cpw": "2439000",
+                            "ibmiTier": "P30",
+                            "stRperf": 1486,
+                            "smt2Rperf": 2526.1,
+                            "smt4Rperf": 3486,
+                            "smt8Rperf": 4392.4
+                        },
+                        {
+                            "name": "EFP4",
+                            "baseFrequency": "3.58",
+                            "maxFrequency": "3.9",
+                            "minSockets": 1,
+                            "maxSockets": 16,
+                            "coresPerSocket": 11,
+                            "cpw": "2549000",
+                            "ibmiTier": "P30",
+                            "stRperf": 1598.7,
+                            "smt2Rperf": 2717.8,
+                            "smt4Rperf": 3750.6,
+                            "smt8Rperf": 4725.8
+                        },
+                        {
+                            "name": "EFP3",
+                            "baseFrequency": "3.55",
+                            "maxFrequency": "3.9",
+                            "minSockets": 1,
+                            "maxSockets": 16,
+                            "coresPerSocket": 12,
+                            "cpw": "2743000",
+                            "ibmiTier": "P30",
+                            "stRperf": 1718.8,
+                            "smt2Rperf": 2922,
+                            "smt4Rperf": 4032.3,
+                            "smt8Rperf": 5080.7
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
