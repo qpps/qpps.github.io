@@ -875,30 +875,6 @@
                     ]
                 }
             ]
-        },
-        {
-            "shortName": "P7+",
-            "name": "POWER 7+",
-            "minEntitlement": 0.05,
-            "models": [
-                {
-                    "type": "8231",
-                    "model": "E1D",
-                    "name": "710",
-                    "processors": [
-                        {
-                            "name": "EPCE",
-                            "baseFrequency": "3.6",
-                            "minSockets": 1,
-                            "maxSockets": 1,
-                            "coresPerSocket": 4,
-                            "cpw": 28400,
-                            "ibmiTier": "P05",
-                            "smt4Rperf": 53.9
-                        }
-                    ]
-                }
-            ]
         }
     ]
 }
