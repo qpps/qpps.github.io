@@ -13,6 +13,7 @@ export interface IModel {
 
 export interface IProcessor {
     id: string,
+    name: string,
     model: IModel,
     cpw?: BigInt,
     cores: number,

@@ -75,7 +75,10 @@
             let smt8 = lparSummary.smt8Rperf;
             let viosCores = 0;
             if (lparSummary.cpw > BigInt("0")) {
-                if (processor.cpw === undefined || (viosQuantity === 0 && processor.viosOnlyIbmi)) {
+                if (
+                    processor.cpw === undefined ||
+                    (viosQuantity === 0 && processor.viosOnlyIbmi)
+                ) {
                     return fp;
                 }
                 ibmiCores = Math.max(
@@ -84,6 +87,15 @@
                     processor.model.processorFamily.minEntitlement
                 );
                 maxIbmiCores = Math.max(ibmiCores, maxIbmiCores);
+            }
+            if (
+                st + smt2 + smt4 + smt8 > 0 &&
+                processor.stRperf === undefined &&
+                processor.smt2Rperf === undefined &&
+                processor.smt4Rperf === undefined &&
+                processor.smt8Rperf === undefined
+            ) {
+                return fp;
             }
             if (processor.stRperf === undefined && st > 0) {
                 smt2 += st;
@@ -195,7 +207,7 @@
     zebra
     headers={[
         { key: "modelName", value: "Model" },
-        { key: "id", value: "Name" },
+        { key: "name", value: "Name" },
         { key: "baseFrequency", value: "Frequency (GHz)" },
         { key: "maxSockets", value: "Sockets" },
         { key: "coresPerSocket", value: "Cores per socket" },

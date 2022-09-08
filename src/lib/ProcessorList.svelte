@@ -81,7 +81,7 @@
     zebra
     headers={[
         { key: "modelName", value: "Model" },
-        { key: "id", value: "Name" },
+        { key: "name", value: "Name" },
         { key: "baseFrequency", value: "Frequency (GHz)" },
         { key: "maxSockets", value: "Sockets" },
         { key: "coresPerSocket", value: "Cores per socket" },
@@ -127,9 +127,11 @@
     </Toolbar>
     <svelte:fragment slot="cell" let:row let:cell>
         {#if cell.key === "cpw"}
-            {cell.value === undefined? "":`${cell.value.toLocaleString()} (${(
-                Number(cell.value) / row.cores
-            ).toLocaleString(undefined, { maximumFractionDigits: 2 })})`}
+            {cell.value === undefined
+                ? ""
+                : `${cell.value.toLocaleString()} (${(
+                      Number(cell.value) / row.cores
+                  ).toLocaleString(undefined, { maximumFractionDigits: 2 })})`}
         {:else if cell.key === "baseFrequency"}
             {row.baseFrequency.toLocaleString()}
             {#if row.maxFrequency}
@@ -141,10 +143,14 @@
                 {` - ${row.maxSockets}`}
             {/if}
         {:else if cell.key === "rperf"}
-            {#if row.smt8Rperf === undefined}
-                {row.smt4Rperf} (SMT4)
-            {:else}
+            {#if row.smt8Rperf !== undefined}
                 {row.smt8Rperf} (SMT8)
+            {:else if row.smt4Rperf !== undefined}
+                {row.smt4Rperf} (SMT4)
+            {:else if row.smt2Rperf !== undefined}
+                {row.smt2Rperf} (SMT2)
+            {:else if row.stRperf !== undefined}
+                {row.stRperf} (ST)
             {/if}
         {:else if cell.key === "actions"}
             <Button
