@@ -33,7 +33,8 @@ export const load: Load = async ({ fetch }) => {
             models.push(model);
             m.processors.forEach((p: any) => {
                 const processor = {
-                    id: p.name,
+                    id: `${model.type}_${model.model}_${p.name}`,
+                    name: p.name,
                     model: model,
                     modelName: `${model.name} (${model.type}-${model.model})`,
                     cpw: p.cpw === undefined ? undefined : BigInt(p.cpw),

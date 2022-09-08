@@ -8,7 +8,7 @@
         Switch,
     } from "carbon-components-svelte";
 
-    import "carbon-components-svelte/css/g100.css";
+    import "carbon-components-svelte/css/g10.css";
 
     import { page } from "$app/stores";
     import { goto } from "$app/navigation";

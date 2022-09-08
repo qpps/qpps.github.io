@@ -8,4 +8,12 @@
     let data: IPowerData = $page.data as IPowerData;
 </script>
 
+<style>
+    .processorList {
+        margin-top: 1em;
+    }
+</style>
+
+<div class="processorList">
 <ProcessorList {data} bind:lpars={$lpars} />
+</div>
