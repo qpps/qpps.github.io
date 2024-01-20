@@ -57,6 +57,7 @@
                             "smt2Rperf": 149.1,
                             "smt4Rperf": 198.8,
                             "smt8Rperf": 254.2,
+                            "ibmiTier": "P10",
                             "cpw": 198200
                         },
                         {
