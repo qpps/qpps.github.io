@@ -47,16 +47,29 @@
                     "name": "S1022s",
                     "processors": [
                         {
+                            "name": "EEPZ",
+                            "baseFrequency": "3",
+                            "maxFrequency": "3.9",
+                            "minSockets": 2,
+                            "maxSockets": 2,
+                            "coresPerSocket": 4,
+                            "stRperf": 77.2,
+                            "smt2Rperf": 149.1,
+                            "smt4Rperf": 198.8,
+                            "smt8Rperf": 254.2,
+                            "cpw": 198200
+                        },
+                        {
                             "name": "EPGR",
                             "baseFrequency": "3",
                             "maxFrequency": "3.9",
                             "minSockets": 1,
-                            "maxSockets": 1,
+                            "maxSockets": 2,
                             "coresPerSocket": 4,
-                            "stRperf": 38.6,
-                            "smt2Rperf": 76.4,
-                            "smt4Rperf": 102.6,
-                            "smt8Rperf": 129.4
+                            "stRperf": 77.2,
+                            "smt2Rperf": 149.1,
+                            "smt4Rperf": 198.8,
+                            "smt8Rperf": 254.2
                         },
                         {
                             "name": "EPGQ",
