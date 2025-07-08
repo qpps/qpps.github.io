@@ -2,6 +2,94 @@
     "version": "20220823001",
     "processorFamilies": [
         {
+            "shortName": "P11",
+            "name": "Power 11",
+            "minEntitlement": 0.05,
+            "models": [
+                {
+                    "type": "9824",
+                    "model": "22A",
+                    "name": "S1122",
+                    "processors": [
+                        {
+                            "name": "ERGR",
+                            "baseFrequency": "3.6",
+                            "maxFrequency": "4.0",
+                            "minSockets": 2,
+                            "maxSockets": 2,
+                            "coresPerSocket": 4,
+                            "cpw": 236400,
+                            "ibmiTier": "P10",
+                            "stRperf": 79.9,
+                            "smt2Rperf": 159.8,
+                            "smt4Rperf": 221.4,
+                            "smt8Rperf": 292.9
+                        },
+                        {
+                            "name": "EPGQ",
+                            "baseFrequency": "3.05",
+                            "maxFrequency": "4.0",
+                            "minSockets": 2,
+                            "maxSockets": 2,
+                            "coresPerSocket": 10,
+                            "maxCoresPerIbmiLpar": 4,
+                            "cpw": 617000,
+                            "ibmiTier": "P10",
+                            "stRperf": 173.2,
+                            "smt2Rperf": 338.1,
+                            "smt4Rperf": 482.8,
+                            "smt8Rperf": 626.7
+                        },
+                        {
+                            "name": "EPG8",
+                            "baseFrequency": "3.0",
+                            "maxFrequency": "4.2",
+                            "minSockets": 2,
+                            "maxSockets": 2,
+                            "coresPerSocket": 16,
+                            "maxCoresPerIbmiLpar": 4,
+                            "cpw": 990400,
+                            "ibmiTier": "P10",
+                            "stRperf": 294.2,
+                            "smt2Rperf": 567.2,
+                            "smt4Rperf": 806.9,
+                            "smt8Rperf": 1040.3
+                        },
+                        {
+                            "name": "EPG9",
+                            "baseFrequency": "2.65",
+                            "maxFrequency": "4.15",
+                            "minSockets": 2,
+                            "maxSockets": 2,
+                            "coresPerSocket": 24,
+                            "maxCoresPerIbmiLpar": 4,
+                            "cpw": 1485600,
+                            "ibmiTier": "P10",
+                            "stRperf": 420.6,
+                            "smt2Rperf": 798.4,
+                            "smt4Rperf": 1060.8,
+                            "smt8Rperf": 1357.8
+                        },
+                        {
+                            "name": "EPGA",
+                            "baseFrequency": "2.4",
+                            "maxFrequency": "3.95",
+                            "minSockets": 2,
+                            "maxSockets": 2,
+                            "coresPerSocket": 30,
+                            "maxCoresPerIbmiLpar": 4,
+                            "cpw": 1756500,
+                            "ibmiTier": "P10",
+                            "stRperf": 488.2,
+                            "smt2Rperf": 913.4,
+                            "smt4Rperf": 1191.8,
+                            "smt8Rperf": 1531.9
+                        }
+                    ]
+                }
+            ]
+        },
+        {
             "shortName": "P10",
             "name": "POWER 10",
             "minEntitlement": 0.05,
