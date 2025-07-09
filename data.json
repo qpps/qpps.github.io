@@ -378,7 +378,7 @@
                             "smt8Rperf": 130.4
                         },
                         {
-                            "name": "EPG7",
+                            "name": "EPGZ",
                             "baseFrequency": "3",
                             "maxFrequency": "3.9",
                             "minSockets": 1,
