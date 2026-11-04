@@ -1,11 +1,11 @@
 <script lang="ts">
-    import ProcessorList from "$lib/ProcessorList.svelte";
+    import ProcessorList from "#lib/ProcessorList.svelte";
     import type { IPowerData } from "./+layout";
 
-    import { lpars } from "$lib/store";
-    import { page } from "$app/stores";
+    import { lpars } from "#lib/store.ts";
+    import { page } from "$app/state";
 
-    let data: IPowerData = $page.data as IPowerData;
+    let data: IPowerData = page.data as IPowerData;
 </script>
 
 <style>

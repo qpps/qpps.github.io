@@ -1,8 +1,8 @@
 <script lang="ts">
-    import LparList from "$lib/LparList.svelte";
+    import LparList from "#lib/LparList.svelte";
     import ProposedProcessorList from "./ProposedProcessorList.svelte";
 
-    import { lpars } from "$lib/store";
+    import { lpars } from "#lib/store.ts";
     import ViosSelection from "./ViosSelection.svelte";
 
     let viosTopology = "2";

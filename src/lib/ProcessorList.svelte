@@ -1,4 +1,5 @@
 <script lang="ts">
+    import type { DataTableHeader } from "carbon-components-svelte/src/DataTable/DataTable.svelte";
     import {
         DataTable,
         Toolbar,
@@ -7,10 +8,10 @@
         MultiSelect,
         Button,
     } from "carbon-components-svelte";
-    import type { DataTableRow } from "carbon-components-svelte/types/DataTable/DataTable.svelte";
+    import type { DataTableRow } from "carbon-components-svelte/src/DataTable/DataTable.svelte";
     import Add from "carbon-icons-svelte/lib/Add.svelte";
 
-    import type { IPowerData } from "src/routes/+layout";
+    import type { IPowerData } from "../routes/+layout";
     import AddLpar from "./AddLpar.svelte";
     import type { ILpar } from "./lpar";
     import type { IModel, IProcessor } from "./processors";
@@ -73,13 +74,9 @@
         selectedProcessor = row as IProcessor;
         openAddLpar = true;
     };
-</script>
 
-<DataTable
-    title="Processors"
-    sortable
-    zebra
-    headers={[
+    // Some columns are computed in the cell slot, so their keys are not row properties.
+    const headers: DataTableHeader[] = [
         { key: "modelName", value: "Model" },
         { key: "name", value: "Name" },
         { key: "baseFrequency", value: "Frequency (GHz)" },
@@ -88,7 +85,14 @@
         { key: "cpw", value: "CPW (by core)" },
         { key: "rperf", value: "rPerf" },
         { key: "actions", value: "Actions", sort: false },
-    ]}
+    ];
+</script>
+
+<DataTable
+    title="Processors"
+    sortable
+    zebra
+    {headers}
     rows={filteredProcessors}
 >
     <Toolbar>
@@ -158,6 +162,7 @@
                 size="small"
                 kind="ghost"
                 iconDescription="Add LPAR"
+                tooltipPosition="top"
                 on:click={() => {
                     addLpar(row);
                 }}

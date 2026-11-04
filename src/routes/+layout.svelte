@@ -10,27 +10,28 @@
 
     import "carbon-components-svelte/css/g10.css";
 
-    import { page } from "$app/stores";
+    import { page } from "$app/state";
     import { goto } from "$app/navigation";
+    import { resolve } from "$app/paths";
     import WarningModal from "./WarningModal.svelte";
     import { LogoGithub } from "carbon-icons-svelte";
 
     let selectedIndex: number;
-    switch ($page.url.pathname) {
-        case "/":
+    switch (page.url.pathname) {
+        case resolve("/"):
             selectedIndex = 0;
             break;
-        case "/lpars":
+        case resolve("/lpars"):
             selectedIndex = 1;
             break;
     }
     const onChange = (e: CustomEvent) => {
         switch (selectedIndex) {
             case 0:
-                goto("/");
+                goto(resolve("/"));
                 break;
             case 1:
-                goto("/lpars");
+                goto(resolve("/lpars"));
                 break;
         }
     };
@@ -40,7 +41,7 @@
     };
 </script>
 
-<Header company="QPPS" platformName="Quantum powered POWER sizer">
+<Header companyName="QPPS" platformName="Quantum powered POWER sizer">
     <HeaderUtilities>
         <HeaderGlobalAction
             aria-label="github"
@@ -55,7 +56,7 @@
         <Switch text="Processors" />
         <Switch text="LPARs" />
     </ContentSwitcher>
-    <p />
+    <p></p>
     <slot />
 </Content>
 <WarningModal />

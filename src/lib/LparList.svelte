@@ -1,4 +1,5 @@
 <script lang="ts">
+    import type { DataTableHeader } from "carbon-components-svelte/src/DataTable/DataTable.svelte";
     import {
         Button,
         DataTable,
@@ -8,7 +9,7 @@
     import { Edit } from "carbon-icons-svelte";
     import type { ILpar } from "./lpar";
     import TrashCan from "carbon-icons-svelte/lib/TrashCan.svelte";
-    import type { DataTableRow } from "carbon-components-svelte/types/DataTable/DataTable.svelte";
+    import type { DataTableRow } from "carbon-components-svelte/src/DataTable/DataTable.svelte";
     import AddEditLpar from "../routes/lpars/AddEditLpar.svelte";
 
     export let lpars: ILpar[];
@@ -16,8 +17,7 @@
     let lpar: ILpar | undefined = undefined;
 
     const removeLpar = (row: DataTableRow) => {
-        lpars.splice(lpars.indexOf(row as ILpar), 1);
-        lpars = lpars;
+        lpars = lpars.filter((l) => l.id !== row.id);
     };
 
     const editLpar = (row: DataTableRow) => {
@@ -31,18 +31,21 @@
     };
 
     let open = false;
+
+    // Some columns are computed in the cell slot, so their keys are not row properties.
+    const headers: DataTableHeader[] = [
+        { key: "name", value: "Name" },
+        { key: "os", value: "OS" },
+        { key: "performance", value: "Processor", sort: false },
+        { key: "actions", value: "", sort: false },
+    ];
 </script>
 
 <DataTable
     title="LPARs"
     sortable
     zebra
-    headers={[
-        { key: "name", value: "Name" },
-        { key: "os", value: "OS" },
-        { key: "performance", value: "Processor", sort: false },
-        { key: "actions", value: "", sort: false },
-    ]}
+    {headers}
     rows={lpars}
 >
     <Toolbar>
@@ -75,6 +78,7 @@
                 size="small"
                 kind="ghost"
                 iconDescription="Edit LPAR"
+                tooltipPosition="top"
                 on:click={() => {
                     editLpar(row);
                 }}
@@ -84,6 +88,7 @@
                 size="small"
                 kind="ghost"
                 iconDescription="Remove LPAR"
+                tooltipPosition="top"
                 on:click={() => {
                     removeLpar(row);
                 }}

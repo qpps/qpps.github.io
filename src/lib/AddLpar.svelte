@@ -108,34 +108,19 @@
     };
 
     const onAdd = () => {
+        const id = crypto.randomUUID();
+        let added: ILpar;
         switch (operatingSystem) {
-            case "ibmi":
-                lpars.push({
-                    id: crypto.randomUUID(),
-                    name,
-                    cpw: BigInt(cpw),
-                    os: "ibmi",
-                });
-                break;
             case "aix":
-                lpars.push({
-                    id: crypto.randomUUID(),
-                    name,
-                    rperf,
-                    smt,
-                    os: "aix",
-                });
+                added = { id, name, rperf, smt, os: "aix" };
                 break;
             case "linux":
-                lpars.push({
-                    id: crypto.randomUUID(),
-                    name,
-                    entitlement,
-                    os: "linux",
-                });
+                added = { id, name, entitlement, os: "linux" };
                 break;
+            default:
+                added = { id, name, cpw: BigInt(cpw), os: "ibmi" };
         }
-        lpars = lpars;
+        lpars = [...lpars, added];
         open = false;
     };
 </script>
@@ -158,12 +143,12 @@
             <RadioButton labelText="Linux" value="linux" />
         </RadioButtonGroup>
         <NumberInput
-            label="Entitlement (processors)"
+            labelText="Entitlement (processors)"
             bind:value={entitlement}
             on:input={onEntitlementInput}
         />
         {#if operatingSystem === "ibmi"}
-            <NumberInput label="CPW" bind:value={cpw} on:input={onCpwInput} />
+            <NumberInput labelText="CPW" bind:value={cpw} on:input={onCpwInput} />
         {:else if operatingSystem === "aix"}
             <RadioButtonGroup
                 legendText="Threads per core"

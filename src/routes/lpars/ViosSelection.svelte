@@ -29,6 +29,6 @@
             <RadioButton value="auto" labelText="Automatic"/>
             <RadioButton value="manual" labelText="Manual" />
         </RadioButtonGroup>
-        <NumberInput disabled={viosSize==="auto"} bind:value={viosEntitlement} label="Entitlement (per VIOS)"/>
+        <NumberInput disabled={viosSize==="auto"} bind:value={viosEntitlement} labelText="Entitlement (per VIOS)"/>
     </FormGroup>
 </Form>

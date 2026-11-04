@@ -1,5 +1,6 @@
-import type { IModel, IProcessor, IProcessordFamily } from "$lib/processors";
+import type { IModel, IProcessor, IProcessordFamily } from "#lib/processors.ts";
 import type { Load } from "@sveltejs/kit";
+import { asset } from "$app/paths";
 
 export interface IPowerData {
     processorFamilies: IProcessordFamily[],
@@ -14,7 +15,7 @@ export const load: Load = async ({ fetch }) => {
     let models: IModel[] = [];
     let processors: IProcessor[] = [];
 
-    const response = await fetch("/data.json");
+    const response = await fetch(asset("data.json"));
     const data = await response.json();
     data.processorFamilies.forEach((pf: any) => {
         const processorFamily = {
@@ -51,6 +52,7 @@ export const load: Load = async ({ fetch }) => {
                     rperf: p.smt8Rperf ? p.smt8Rperf : p.smt4Rperf,
                     maxCoresPerIbmiLpar: p.maxCoresPerIbmiLpar,
                     maxAixIbmiCorePercent: p.maxAixIbmiCorePercent,
+                    maxIbmiVirtualProcessors: p.maxIbmiVirtualProcessors,
                     viosOnlyIbmi: p.viosOnlyIbmi === true,
                     ibmiTier: p.ibmiTier
                 }
